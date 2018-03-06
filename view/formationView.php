@@ -2,6 +2,32 @@
 <div class="container formation">
 
    <h1>FORMATIONS</h1>
+
+    <form method="post" action="#">
+        <label for="rechercher"></label>
+        <input type="text" name="search" placeholder="Rechercher...">
+        <input type="submit" name="submit">
+    </form>
+
+    <?php
+        if(isset($_POST['submit'])){ ?>
+    <nav>
+        <ul>
+    <?php
+            foreach($req as $k => $v){ ?>
+
+
+                    <li><?=$v['contenu'];?></li>
+                    <li><?=$v['date_deb'];?></li>
+                    <li><?=$v['nom_p']." ".$v['prenom_p'];?></li>
+                    <li><?=$v['commune'];?></li>
+
+            <?php } ?>
+        </ul>
+    </nav>
+    <?php
+        }
+    ?>
      <!--
     <div class="row rowFormation">
         <div class="col-xs-4 col-md-3 displayFormation">
