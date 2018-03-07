@@ -1,6 +1,5 @@
 <?php
     session_start();
-      //print_r($_SESSION);
 
     require "core/functions.php";
     require "model/bdd.php";
@@ -11,14 +10,9 @@
     define('DS', DIRECTORY_SEPARATOR);
     define('CORE',ROOT.DS.'core');
 
-//    if(!isset($_SESSION['id_s']))
-//    {
-//        header("location:".BASE_URL."/loginController");
-//    }else{
-        
           if(!isset($_GET['p']) || $_GET['p'] == "")
           {
-            $_GET["p"] = 'accueil';
+            $_GET["p"] = 'login';
           }
           else
           {

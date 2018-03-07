@@ -204,16 +204,32 @@ nav ul li{
 .panel-body .table {margin-bottom: 0px; }
 
 .sport{
-    background: yellow;
     height: 100%
 }
 .sport_left{
-    background: red;
+    /*background: red;*/
+    width: :100px;
+
 }
 
 .sport_right{
-    background: blue;
+    border-left: 1px solid black;
+    padding-left: 5px;
+    margin-left: -10px;
     height: 100%;
+}
+
+.formations{
+    border:1px solid black;
+    /*width: 700px;*/
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title_formations{
+    background: #70808b;
+    font-size: 20px;
 }
 
 .footer{

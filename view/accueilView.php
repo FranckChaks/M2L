@@ -1,3 +1,12 @@
+<?php if (isset($_SESSION['connecte']))
+{
+    echo ' ';
+}
+else
+{
+    header('Location:login');
+}
+?>
 <div class="container-fluid">
     <div class="row">
         <div class="col-xs-12 col-md-12 corps">
@@ -17,12 +26,12 @@
     
     <div class="row">
        <div class="col-xs-12 col-md-12">
-            <div class="col-xs-12 col-md-6 bloc1">
+           <a href="<?=BASE_URL;?>/EspacePerso"><div class="col-xs-12 col-md-6 bloc1">
               <div class="espace_perso">
               <img src="css/espace_perso.png">
                <h1> Votre Espace Personnel</h1>
                </div>
-            </div>
+            </div></a>
             
             <a href="<?=BASE_URL;?>/formationController"><div class="col-xs-12 col-md-6 bloc2">
             <div class="section">
