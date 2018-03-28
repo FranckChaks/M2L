@@ -23,8 +23,8 @@
 
                         <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="5000" data-slider-step="50" data-slider-value="<?= $r["credit"]; ?>" data-slider-enabled="false" />
 
-                        <input id="ex1-enabled" type="checkbox"/> Autoriser Modification
-                        <span id="ex1CurrentSliderValLabel">Nombre de crédits ajoutés: <span id="ex1SliderVal"><?= $r["credit"]; ?></span></span>
+                        <input id="ex1-enabled" type="checkbox"/> Autoriser Modification |
+                        <span id="ex1CurrentSliderValLabel">Valeur de la modification: <span id="ex1SliderVal"><?= $r["credit"]; ?></span></span>
                         <input type="text" class="form form-control" name="nom" value="<?= $r["nom_s"]; ?>">
                         <label>Jours de formations restants:</label>
                         <input type="text" class="form form-control" name="prenom" value="<?= $r["nbj"]; ?>">
