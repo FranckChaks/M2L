@@ -1,19 +1,25 @@
 $(document).ready(function () {
     $("#ex1").slider();
-    var mem = "<?php echo $r['credit'] ?>";
+    var mem = $("#ex1").val();
 
 // With JQuery
     $("#ex1-enabled").click(function() {
         if(this.checked) {
+
             console.log(mem);
             $("#ex1").slider("enable");
             $('#ex1').slider({
+
                 formatter: function(value) {
-                    return 'Current value: ' + value;
+                    return value;
                 }
             });
             $("#ex1").on("slide", function(slideEvt) {
-                $("#ex1SliderVal").text(slideEvt.value);
+                var valueOfDoom = slideEvt.value-mem;
+                if(valueOfDoom > 0){
+                    valueOfDoom = "+"+valueOfDoom;
+                }
+                $("#ex1SliderVal").text(valueOfDoom);
             });
         }
         else {

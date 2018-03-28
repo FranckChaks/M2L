@@ -1,75 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="620680c3-6a0a-4187-b304-149106890080" name="Default" comment="ajustement ajout / modification crédits">
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/arc.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/athle.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bloc1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap-theme.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap-theme.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap-theme.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap-theme.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/HexagonProgress/jquery.hexagonprogress.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/bootstrap-sweetalert/lib/sweet-alert.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/bootstrap-validator/dist/validator.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/bootstrap/dist/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/bootstrap/dist/js/bootstrap.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/font-awesome/css/font-awesome.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/imagesloaded/imagesloaded.pkgd.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/isotope/dist/isotope.pkgd.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/jarallax/dist/jarallax.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/jquery.countdown/dist/jquery.countdown.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/jquery/dist/jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/magnific-popup/dist/jquery.magnific-popup.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/magnific-popup/dist/magnific-popup.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/owl.carousel/dist/assets/owl.video.play.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/owl.carousel/dist/owl.carousel.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/smoothscroll-for-websites/SmoothScroll.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/social-likes/dist/social-likes.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/social-likes/dist/social-likes_flat.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/espace_perso.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/font-awesome.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/formation.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/logo_admin.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/sport.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/sport2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/style.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/tennis.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/wallpaper.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/wallpaper2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/youplay/css/youplay-anime.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/youplay/css/youplay-light.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/youplay/css/youplay-shooter.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/youplay/css/youplay.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/youplay/js/youplay.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/FontAwesome.otf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/bootstrap-fileupload.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/bootstrap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/custom.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/dataTables/dataTables.bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/dataTables/dataTables.bootstrap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/dataTables/jquery.dataTables.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/galleryCustom.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery-1.10.2.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery-3.2.1.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.metisMenu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.prettyPhoto.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/script.js" />
+    <list default="true" id="620680c3-6a0a-4187-b304-149106890080" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/assets/js/script.js" afterPath="$PROJECT_DIR$/assets/js/script.js" />
+      <change beforePath="$PROJECT_DIR$/view/modifMembresView.php" afterPath="$PROJECT_DIR$/view/modifMembresView.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -132,21 +67,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            <state relative-caret-position="391">
+              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modifMembresView.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="modifMembresView.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/modifMembresView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="90" lean-forward="false" selection-start-line="25" selection-start-column="90" selection-end-line="25" selection-end-column="90" />
+            <state relative-caret-position="0">
+              <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -160,6 +95,12 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>valu</find>
+      <find>mem</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -264,11 +205,11 @@
         <option value="$PROJECT_DIR$/model/modifMembresModel.php" />
         <option value="$PROJECT_DIR$/controller/modifMembres.php" />
         <option value="$PROJECT_DIR$/assets/script.js" />
-        <option value="$PROJECT_DIR$/assets/js/script.js" />
         <option value="$PROJECT_DIR$/view/footer.php" />
         <option value="$PROJECT_DIR$/template.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/view/modifMembresView.php" />
+        <option value="$PROJECT_DIR$/assets/js/script.js" />
       </list>
     </option>
   </component>
@@ -403,7 +344,7 @@
       <workItem from="1520374111856" duration="775000" />
       <workItem from="1520438010961" duration="14417000" />
       <workItem from="1521118119264" duration="4492000" />
-      <workItem from="1522256251125" duration="3264000" />
+      <workItem from="1522256251125" duration="7117000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit + read me (fonctionnalité à implémenter)">
       <created>1520343459429</created>
@@ -440,11 +381,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522259245225</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="déplacements et ajouts ressources">
+      <created>1522259579185</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1522259579185</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29282000" />
+    <option name="totallyTimeSpent" value="33135000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -452,7 +400,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24270834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -481,20 +429,14 @@
     <MESSAGE value="First Commit + read me (fonctionnalité à implémenter)" />
     <MESSAGE value="espace gestion membres d'une équipe" />
     <MESSAGE value="ajustement ajout / modification crédits" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajustement ajout / modification crédits" />
+    <MESSAGE value="déplacements et ajouts ressources" />
+    <option name="LAST_COMMIT_MESSAGE" value="déplacements et ajouts ressources" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/view/loginView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="122" lean-forward="false" selection-start-line="36" selection-start-column="122" selection-end-line="36" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/formationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -830,14 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -864,22 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="177" column="31" lean-forward="false" selection-start-line="177" selection-start-column="31" selection-end-line="177" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.svg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -890,10 +808,42 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/dataTables/dataTables.bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-563">
+          <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="559" column="6" lean-forward="false" selection-start-line="559" selection-start-column="6" selection-end-line="559" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/view/modifMembresView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="90" lean-forward="false" selection-start-line="25" selection-start-column="90" selection-end-line="25" selection-end-column="90" />
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
           <folding />
         </state>
       </provider>
