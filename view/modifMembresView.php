@@ -20,7 +20,6 @@
                 <form method="post">
                     <div class="form-group">
                         <label>Crédits:</label>
-                        <?php $nom = "bertrand"; ?>
                         <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="5000" data-slider-step="50" data-slider-value="<?= $r["credit"]; ?>" data-slider-enabled="false" />
 
                         <input id="ex1-enabled" type="checkbox"/> Autoriser Modification |
