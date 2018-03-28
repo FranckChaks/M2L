@@ -1,55 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="620680c3-6a0a-4187-b304-149106890080" name="Default" comment="espace gestion membres d'une équipe">
+    <list default="true" id="620680c3-6a0a-4187-b304-149106890080" name="Default" comment="ajustement ajout / modification crédits">
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/arc.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/athle.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bloc1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap-theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap-theme.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap-theme.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap-theme.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/HexagonProgress/jquery.hexagonprogress.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/bootstrap-sweetalert/lib/sweet-alert.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/bootstrap-validator/dist/validator.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/bootstrap/dist/js/bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/font-awesome/css/font-awesome.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/imagesloaded/imagesloaded.pkgd.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/isotope/dist/isotope.pkgd.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/jarallax/dist/jarallax.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/jquery.countdown/dist/jquery.countdown.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/jquery/dist/jquery.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/magnific-popup/dist/jquery.magnific-popup.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/magnific-popup/dist/magnific-popup.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/owl.carousel/dist/assets/owl.video.play.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/owl.carousel/dist/owl.carousel.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/smoothscroll-for-websites/SmoothScroll.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/social-likes/dist/social-likes.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bower_components/social-likes/dist/social-likes_flat.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/espace_perso.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/font-awesome.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/formation.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/logo_admin.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/sport.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/sport2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/tennis.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/wallpaper.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/wallpaper2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/youplay/css/youplay-anime.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/youplay/css/youplay-light.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/youplay/css/youplay-shooter.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/youplay/css/youplay.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/youplay/js/youplay.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/FontAwesome.otf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/bootstrap-fileupload.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/custom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/dataTables/dataTables.bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/dataTables/dataTables.bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/dataTables/jquery.dataTables.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/galleryCustom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery-1.10.2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery-3.2.1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.metisMenu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.prettyPhoto.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/script.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/arc.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/athle.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bloc1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap-theme.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap-theme.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap-theme.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/HexagonProgress/jquery.hexagonprogress.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/bootstrap-sweetalert/lib/sweet-alert.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/bootstrap-validator/dist/validator.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/bootstrap/dist/css/bootstrap.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/bootstrap/dist/js/bootstrap.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/imagesloaded/imagesloaded.pkgd.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/isotope/dist/isotope.pkgd.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/jarallax/dist/jarallax.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/jquery.countdown/dist/jquery.countdown.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/jquery/dist/jquery.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/magnific-popup/dist/jquery.magnific-popup.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/magnific-popup/dist/magnific-popup.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/owl.carousel/dist/assets/owl.video.play.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/owl.carousel/dist/owl.carousel.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/smoothscroll-for-websites/SmoothScroll.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/social-likes/dist/social-likes.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/bower_components/social-likes/dist/social-likes_flat.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/espace_perso.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/formation.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/sport.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/sport2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/tennis.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/wallpaper.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/wallpaper2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/youplay/css/youplay-anime.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/youplay/css/youplay-light.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/youplay/css/youplay-shooter.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/youplay/css/youplay.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/youplay/js/youplay.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/template.php" afterPath="$PROJECT_DIR$/template.php" />
-      <change beforePath="$PROJECT_DIR$/view/footer.php" afterPath="$PROJECT_DIR$/view/footer.php" />
-      <change beforePath="$PROJECT_DIR$/view/modifMembresView.php" afterPath="$PROJECT_DIR$/view/modifMembresView.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,38 +80,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="espaceGestionModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/espaceGestionModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding>
-                <marker date="1521128574328" expanded="true" signature="83:116" ph="SELECT * FRO... salarie" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="espaceGestionView.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/espaceGestionView.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="6" lean-forward="false" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="modifMembres.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/modifMembres.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -106,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/model/modifMembresModel.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+              <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
               <folding>
                 <marker date="1521128574012" expanded="true" signature="87:120" ph="SELECT * FRO... salarie" />
               </folding>
@@ -138,23 +126,23 @@
         <entry file="file://$PROJECT_DIR$/view/footer.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+              <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modifMembresView.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="modifMembresView.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/modifMembresView.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
@@ -415,7 +403,7 @@
       <workItem from="1520374111856" duration="775000" />
       <workItem from="1520438010961" duration="14417000" />
       <workItem from="1521118119264" duration="4492000" />
-      <workItem from="1522256251125" duration="2924000" />
+      <workItem from="1522256251125" duration="3264000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit + read me (fonctionnalité à implémenter)">
       <created>1520343459429</created>
@@ -445,11 +433,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522256445352</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ajustement ajout / modification crédits">
+      <created>1522259245225</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1522259245225</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28942000" />
+    <option name="totallyTimeSpent" value="29282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -457,6 +452,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24270834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -467,7 +463,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -485,36 +480,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit + read me (fonctionnalité à implémenter)" />
     <MESSAGE value="espace gestion membres d'une équipe" />
-    <option name="LAST_COMMIT_MESSAGE" value="espace gestion membres d'une équipe" />
+    <MESSAGE value="ajustement ajout / modification crédits" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajustement ajout / modification crédits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controller/EspacePerso.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3927">
-          <caret line="231" column="20" lean-forward="false" selection-start-line="231" selection-start-column="20" selection-end-line="231" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/loginView.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -860,7 +833,7 @@
     <entry file="file://$PROJECT_DIR$/view/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -884,25 +857,43 @@
     <entry file="file://$PROJECT_DIR$/model/modifMembresModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding>
             <marker date="1521128574012" expanded="true" signature="87:120" ph="SELECT * FRO... salarie" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/modifMembresView.php">
+    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="90" lean-forward="false" selection-start-line="25" selection-start-column="90" selection-end-line="25" selection-end-column="90" />
+        <state relative-caret-position="153">
+          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/script.js">
+    <entry file="file://$PROJECT_DIR$/assets/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        <state relative-caret-position="253">
+          <caret line="177" column="31" lean-forward="false" selection-start-line="177" selection-start-column="31" selection-end-line="177" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/fonts/fontawesome-webfont.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/modifMembresView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="90" lean-forward="false" selection-start-line="25" selection-start-column="90" selection-end-line="25" selection-end-column="90" />
           <folding />
         </state>
       </provider>
