@@ -28,14 +28,14 @@ else
        <div class="col-xs-12 col-md-12">
            <a href="<?=BASE_URL;?>/EspacePerso"><div class="col-xs-12 col-md-6 bloc1">
               <div class="espace_perso">
-              <img src="css/espace_perso.png">
+              <img src="assets/css/espace_perso.png">
                <h1> Votre Espace Personnel</h1>
                </div>
             </div></a>
             
             <a href="<?=BASE_URL;?>/formationController"><div class="col-xs-12 col-md-6 bloc2">
             <div class="section">
-               <img height="128" width="128" src="css/formation.png">
+               <img height="128" width="128" src="assets/css/formation.png">
                 <h1>Consulter les formations</h1>
             </div>
                 </div></a>
