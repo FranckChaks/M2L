@@ -10,9 +10,9 @@
                         <label>Prénom:</label>
                         <input type="text" class="form form-control" name="prenom" value="<?= $r["prenom"]; ?>">
                         <label>Email:</label>
-                        <input type="text" class="form form-control" name="nom" value="<?= $r["email"]; ?>">
+                        <input type="text" class="form form-control" name="email" value="<?= $r["email"]; ?>">
                         <hr>
-                        <button type="submit" name="envoyer" class="form form-control">Modifier</button>
+                        <button type="submit" name="modif_infos_base" class="form form-control">Modifier</button>
                     </div>
                 </form>
                 <hr class="primary">
@@ -23,12 +23,11 @@
                         <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="5000" data-slider-step="50" data-slider-value="<?= $r["credit"]; ?>" data-slider-enabled="false" />
 
                         <input id="ex1-enabled" type="checkbox"/> Autoriser Modification |
-                        <span id="ex1CurrentSliderValLabel">Valeur de la modification: <span id="ex1SliderVal">0</span></span>
-                        <input type="text" class="form form-control" name="nom" value="<?= $r["nom"]; ?>">
+                        <span id="ex1CurrentSliderValLabel">Valeur de la modification: <span id="ex1SliderVal">0</span></span><br/>
                         <label>Jours de formations restants:</label>
                         <input type="text" class="form form-control" name="prenom" value="<?= $r["nbj"]; ?>">
                         <hr>
-                        <button type="submit" name="envoyer" class="form form-control">Modifier</button>
+                        <button type="submit" name="modif_infos_credit" class="form form-control">Modifier</button>
                     </div>
                 </form>
             </div>
