@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="620680c3-6a0a-4187-b304-149106890080" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/controller/espaceGestion.php" afterPath="$PROJECT_DIR$/controller/espaceGestion.php" />
       <change beforePath="$PROJECT_DIR$/controller/modifMembres.php" afterPath="$PROJECT_DIR$/controller/modifMembres.php" />
-      <change beforePath="$PROJECT_DIR$/model/modifMembresModel.php" afterPath="$PROJECT_DIR$/model/modifMembresModel.php" />
-      <change beforePath="$PROJECT_DIR$/view/modifMembresView.php" afterPath="$PROJECT_DIR$/view/modifMembresView.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +17,8 @@
       <file leaf-file-name="modifMembres.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/modifMembres.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            <state relative-caret-position="289">
+              <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -369,7 +366,7 @@
       <workItem from="1520438010961" duration="14417000" />
       <workItem from="1521118119264" duration="4492000" />
       <workItem from="1522256251125" duration="7760000" />
-      <workItem from="1522322679211" duration="5002000" />
+      <workItem from="1522322679211" duration="5494000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit + read me (fonctionnalité à implémenter)">
       <created>1520343459429</created>
@@ -434,17 +431,23 @@
       <option name="project" value="LOCAL" />
       <updated>1522326155587</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="rectification update infos membres">
+      <created>1522328506754</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1522328506754</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38780000" />
+    <option name="totallyTimeSpent" value="39272000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24270834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24270834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -478,7 +481,8 @@
     <MESSAGE value="déplacements et ajouts ressources" />
     <MESSAGE value="affichage de la valeur des crédit modifiés" />
     <MESSAGE value="modif nom appel bdd espace membre" />
-    <option name="LAST_COMMIT_MESSAGE" value="modif nom appel bdd espace membre" />
+    <MESSAGE value="rectification update infos membres" />
+    <option name="LAST_COMMIT_MESSAGE" value="rectification update infos membres" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -842,8 +846,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/modifMembres.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        <state relative-caret-position="289">
+          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
           <folding />
         </state>
       </provider>

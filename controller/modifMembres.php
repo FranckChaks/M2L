@@ -13,13 +13,6 @@ if (isset($_POST['modif_infos_base'])) {
     header('Location:espaceGestion');
 }
 if (isset($_POST['modif_infos_credit'])) {
-    if (isset($_POST['nom']) && !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['email'])) {
-        $nom = $_POST['nom'];
-        $prenom = $_POST['prenom'];
-        $email = $_POST['email'];
-
-        modif_infos_base($id,$nom, $prenom, $email);
-    }
 }
 
 require "view/modifMembresView.php";
