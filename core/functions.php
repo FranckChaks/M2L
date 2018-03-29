@@ -21,4 +21,27 @@
         $_SESSION['flash']['type'] = $type;
     }
 
+    function getRandomPSWD()
+    {
+        $string = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+        for($i = 0; $i < 6; $i++)
+        {
+            $mdp = "";
+            for($j = 0; $j < 2; $j++)
+            {
+                $mdp .= $string[rand(0,25)];
+            }
+            for($j = 0; $j < 2; $j++)
+            {
+                $mdp .= $string[rand(26,51)];
+            }
+            for($j = 0; $j < 2; $j++)
+            {
+                $mdp .= $string[rand(52,61)];
+            }
+            $mdp = str_shuffle($mdp);
+        }
+    }
+
 ?>
