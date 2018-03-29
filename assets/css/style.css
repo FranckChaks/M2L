@@ -208,7 +208,7 @@ nav ul li{
 }
 .sport_left{
     /*background: red;*/
-    width: :100px;
+    width: 100px;
 
 }
 
@@ -240,4 +240,8 @@ nav ul li{
     padding-top: 80px;
     font-size: 25px;
     bottom: 0;
+}
+
+#ex1-enabled{
+    margin-left: 20px;
 }

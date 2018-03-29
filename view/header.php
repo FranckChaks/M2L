@@ -9,6 +9,7 @@
                    <li><h1>LOGO</h1></li>
                     <li><a href="accueil">Accueil</a></li>
                     <li><a href="EspacePerso">Espace personnel</a></li>
+                    <li><a href="espaceGestion">Gestion employés</a></li>
                     <li><a href="formationController">Formation</a></li>
                     <li>Documentation</li>
                     <li><a href="logout">Déconnexion</a></li>
