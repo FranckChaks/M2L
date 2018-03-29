@@ -46,5 +46,8 @@
             <?php
         }
         ?>
+        <br><br>
+<!--        <a href="index.php?p=modifMembres&id=--><?//=$_SESSION['id']; ?><!--"><button class="btn btn-success">Modifier les informations</button></a>-->
+        <br><br>
     </div>
 </div>

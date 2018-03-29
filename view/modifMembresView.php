@@ -11,6 +11,12 @@
                         <input type="text" class="form form-control" name="prenom" value="<?= $r["prenom"]; ?>">
                         <label>Email:</label>
                         <input type="text" class="form form-control" name="email" value="<?= $r["email"]; ?>">
+<!--                        --><?php
+//                            if($_SESSION['id'] = $_GET['id']){ ?>
+<!--                                <label>Mot de passe:</label>-->
+<!--                                    <input type="text" class="form form-control" name="mdp" value="--><?//= $r["mdp"]; ?><!--">-->
+<!--                        --><?php //   }
+//                        ?>
                         <hr>
                         <button type="submit" name="modif_infos_base" class="form form-control">Modifier</button>
                     </div>
