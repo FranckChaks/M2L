@@ -24,9 +24,9 @@
                                     <td>
                                         <?= $number; ?>
                                     </td>
-                                    <td><span><?= $v["nom_s"]; ?></span></td>
+                                    <td><span><?= $v["nom"]; ?></span></td>
                                     <td>
-                                        <?= $v["prenom_s"]; ?>
+                                        <?= $v["prenom"]; ?>
                                     </td>
                                     <td>
                                         <?= $v["email"]; ?>
