@@ -11,6 +11,8 @@ require "model/espaceGestionModel.php";
         addAdresse($rue, $numero, $commune, $cp);
         $id_a = $bdd->lastInsertId();
 
+        $randomPswd = getRandomPSWD();
+
         $prenom= $_POST['prenom'];
         $nom= $_POST['nom'];
         $email = $_POST['email'];
