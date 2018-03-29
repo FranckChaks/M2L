@@ -6,9 +6,9 @@
                 <form method="post">
                     <div class="form-group">
                         <label>Nom:</label>
-                        <input type="text" class="form form-control" name="nom" value="<?= $r["nom_s"]; ?>">
+                        <input type="text" class="form form-control" name="nom" value="<?= $r["nom"]; ?>">
                         <label>Prénom:</label>
-                        <input type="text" class="form form-control" name="prenom" value="<?= $r["prenom_s"]; ?>">
+                        <input type="text" class="form form-control" name="prenom" value="<?= $r["prenom"]; ?>">
                         <label>Email:</label>
                         <input type="text" class="form form-control" name="nom" value="<?= $r["email"]; ?>">
                         <hr>
@@ -24,7 +24,7 @@
 
                         <input id="ex1-enabled" type="checkbox"/> Autoriser Modification |
                         <span id="ex1CurrentSliderValLabel">Valeur de la modification: <span id="ex1SliderVal">0</span></span>
-                        <input type="text" class="form form-control" name="nom" value="<?= $r["nom_s"]; ?>">
+                        <input type="text" class="form form-control" name="nom" value="<?= $r["nom"]; ?>">
                         <label>Jours de formations restants:</label>
                         <input type="text" class="form form-control" name="prenom" value="<?= $r["nbj"]; ?>">
                         <hr>
