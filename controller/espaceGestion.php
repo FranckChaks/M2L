@@ -8,12 +8,6 @@ require "model/espaceGestionModel.php";
         $commune = $_POST['commune'];
         $cp = $_POST['cp'];
 
-//        var_dump($rue);
-//        var_dump($numero);
-//        var_dump($commune);
-//        var_dump($cp);
-
-
         addAdresse($rue, $numero, $commune, $cp);
         $id_a = $bdd->lastInsertId();
 
@@ -23,14 +17,7 @@ require "model/espaceGestionModel.php";
 
         $id_c = $_SESSION['id'];
 
-//        var_dump($prenom);
-//        var_dump($nom);
-//        var_dump($email);
-//        var_dump($cp);
-        var_dump($id_a);
-//        var_dump($id_c);
-//
-//        die();
+
         addMembre($nom, $prenom, $email, $id_a, $id_c);
 
         header("location:espaceGestion");
