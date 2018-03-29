@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="620680c3-6a0a-4187-b304-149106890080" name="Default" comment="modif">
+    <list default="true" id="620680c3-6a0a-4187-b304-149106890080" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/controller/espaceGestion.php" afterPath="$PROJECT_DIR$/controller/espaceGestion.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -558,11 +557,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522331148282</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fix espaceGestion">
+      <created>1522331383935</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1522331383935</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41127000" />
+    <option name="totallyTimeSpent" value="41819000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -613,7 +619,8 @@
     <MESSAGE value="déplacements et ajouts ressources" />
     <MESSAGE value="affichage de la valeur des crédit modifiés" />
     <MESSAGE value="Ajout salarié à l'équipe + adresse" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout salarié à l'équipe + adresse" />
+    <MESSAGE value="Fix espaceGestion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix espaceGestion" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
