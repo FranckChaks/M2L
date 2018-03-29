@@ -41,6 +41,7 @@
                 $mdp .= $string[rand(52,61)];
             }
             $mdp = str_shuffle($mdp);
+            return $mdp;
         }
     }
 
