@@ -33,7 +33,7 @@
                                         <?= $v["email"]; ?>
                                     </td>
                                     <td><span><?= $v["credit"]; ?></span></td>
-                                    <td><span><a href="index.php?p=modifMembres&id=<?=$v["id_s"]; ?>">Modifier</a> | <a href="">Supprimer</a></span></td>
+                                    <td><span><a href="index.php?p=modifMembres&id=<?=$v["id_s"]; ?>">Modifier</a> | <a href="index.php?p=suppMembres&id=<?=$v["id_s"]; ?>">Supprimer</a></span></td>
                                 </tr>
                                 <?php $number++; } ?>
                         </tbody>
