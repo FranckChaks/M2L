@@ -7,13 +7,14 @@ function get_tous_membres()
     return $requete->fetchAll();
 }
 
-function addMembre($nom, $prenom, $email, $id_a, $id_c){
+function addMembre($nom, $prenom, $email, $randomPswd, $id_a, $id_c){
     global $bdd;
-    $req = $bdd->prepare("INSERT INTO salarie (nom, prenom, email, id_a, id_c) VALUES (:nom, :prenom, :email, :id_a, :id_c)");
+    $req = $bdd->prepare("INSERT INTO salarie (nom, prenom, email, mdp, id_a, id_c) VALUES (:nom, :prenom, :email, :randomPswd,:id_a, :id_c)");
 
     $req->bindValue(":nom", $nom, PDO::PARAM_STR);
     $req->bindValue(":prenom", $prenom, PDO::PARAM_STR);
     $req->bindValue(":email", $email, PDO::PARAM_STR);
+    $req->bindValue(":randomPswd", $randomPswd, PDO::PARAM_STR);
     $req->bindValue(":id_a", $id_a, PDO::PARAM_INT);
     $req->bindValue(":id_c", $id_c, PDO::PARAM_INT);
     $req->execute();

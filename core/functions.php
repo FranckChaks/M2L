@@ -45,4 +45,10 @@
         }
     }
 
+    function envoiPswd($email,$message)
+    {
+
+        mail('caffeinated@example.com','Votre Mot de passe M2L', $message);
+    }
+
 ?>

@@ -11,16 +11,20 @@ require "model/espaceGestionModel.php";
         addAdresse($rue, $numero, $commune, $cp);
         $id_a = $bdd->lastInsertId();
 
-        $randomPswd = getRandomPSWD();
-
         $prenom= $_POST['prenom'];
         $nom= $_POST['nom'];
         $email = $_POST['email'];
-
+        //génération aléatoire du mot de passe
+        $randomPswd = getRandomPSWD();
+        //message du mail comportant le mot de passe non crypté de l'employé
+        $message = "Félicitation, votre compte M2L a été créer. Voici votre mot de passe personnel: ".$randomPswd;
+        envoiPswd($email,$message);
+        //cryptage du mot de passe généré
+        $randomPswd = sha1($randomPswd);
         $id_c = $_SESSION['id'];
 
 
-        addMembre($nom, $prenom, $email, $id_a, $id_c);
+        addMembre($nom, $prenom, $email, $randomPswd, $id_a, $id_c);
 
         header("location:espaceGestion");
     }
