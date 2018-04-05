@@ -1,6 +1,6 @@
 <?php
 require "model/espaceGestionModel.php";
-
+    $req = displayUncheckedFormation();
     $r = get_tous_membres();
     if(isset($_POST['submit'])){
         $rue = $_POST['rue'];

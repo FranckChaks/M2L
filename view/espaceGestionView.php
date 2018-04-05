@@ -41,6 +41,12 @@
                 </div>
             </div>
         </div>
+        <?php
+            foreach($req as $k=>$v){
+
+                echo $v['prenom']."<br>";
+            }
+        ?>
         <h1 class="center">Ajouter un salarié</h1>
         <div class="row">
             <form action="#" method="post">

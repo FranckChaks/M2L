@@ -29,3 +29,10 @@ function addAdresse($rue, $numero, $commune, $cp){
     $req->bindValue(":cp", $cp, PDO::PARAM_STR);
     $req->execute();
 }
+
+function displayUncheckedFormation(){
+    global $bdd;
+    $req = $bdd->prepare("SELECT DISTINCT s.prenom FROM salarie s, participer p WHERE p.etat = 0 AND estChef = 0 AND s.id_s = p.id_s AND id_c = ".$_SESSION['id']);
+    $req->execute();
+    return $req->fetchAll();
+}
