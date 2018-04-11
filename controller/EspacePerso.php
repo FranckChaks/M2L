@@ -6,13 +6,13 @@ require "model/EspacePersoModel.php";
     $info = displayInfo();
     foreach($req as $k=>$v){
         if($v['etat'] == 0){
-            $message = "En attente...";
+            $message = "<button class='btn btn-warning'>En attente...</button>";
         }
-        if($v['etat'] == 1){
-            $message = "Validée";
+        else if($v['etat'] == 1){
+            $message = "<button class='btn btn-success'>Validée</button>";
         }
-        if($v['etat'] == 2){
-            $message = "Refusée";
+        else if($v['etat'] == 2){
+            $message = "<button class='btn btn-danger'>Refusée</button>";
         }
 
     }
