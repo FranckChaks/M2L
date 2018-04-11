@@ -44,6 +44,7 @@
         <?php
             foreach($req as $k=>$v){
 
+                echo $v['nom']."<br>";
                 echo $v['prenom']."<br>";
             }
         ?>

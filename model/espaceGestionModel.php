@@ -32,7 +32,7 @@ function addAdresse($rue, $numero, $commune, $cp){
 
 function displayUncheckedFormation(){
     global $bdd;
-    $req = $bdd->prepare("SELECT DISTINCT s.prenom FROM salarie s, participer p WHERE p.etat = 0 AND estChef = 0 AND s.id_s = p.id_s AND id_c = ".$_SESSION['id']);
+    $req = $bdd->prepare("SELECT DISTINCT s.prenom, s.nom FROM salarie s, participer p WHERE p.etat = 0 AND estChef = 0 AND s.id_s = p.id_s AND id_c = ".$_SESSION['id']);
     $req->execute();
     return $req->fetchAll();
 }
