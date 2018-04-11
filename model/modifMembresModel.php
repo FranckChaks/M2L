@@ -6,10 +6,10 @@ function get_infos_membres($id)
     $requete->execute();
     return $requete->fetch();
 }
-function get_infos_chefs()
+function get_infos_chefs($id)
 {
     global $bdd;
-    $requete = $bdd->prepare("SELECT * FROM salarie WHERE estChef=2");
+    $requete = $bdd->prepare("SELECT * FROM salarie WHERE estChef=2 AND id_s NOT IN (SELECT id_s FROM salarie WHERE id_s='".$id."' )");
     $requete->execute();
     return $requete->fetchAll();
 }

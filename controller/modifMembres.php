@@ -2,7 +2,7 @@
 require "model/modifMembresModel.php";
     $id = (int)$_GET["id"];
     $r = get_infos_membres($id);
-    $s = get_infos_chefs();
+    $s = get_infos_chefs($id);
 if (isset($_POST['modif_infos_base'])) {
     if (!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['email'])) {
         $nom = $_POST['nom'];
