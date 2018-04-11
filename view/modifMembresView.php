@@ -1,3 +1,4 @@
+<?php if (isset($_SESSION['lvl']) AND $_SESSION['lvl']==3){ ?>
 <div id="page-wrapper">
     <div id="page-inner">
         <a href="gestionMembres" class="previous">&laquo; Retour</a>
@@ -17,6 +18,11 @@
 <!--                                    <input type="text" class="form form-control" name="mdp" value="--><?//= $r["mdp"]; ?><!--">-->
 <!--                        --><?php //   }
 //                        ?>
+                        <label>Affilié à:</label>
+                        <select name="chef" class="form-control">
+                            <?php  foreach($s as $k=>$v){ ?>
+                            <option value="<?php echo $v['id_s']; ?>" <?php if($r["id_c"]==$v['id_s']){ echo "selected"; } ?>><?php echo $v['nom']; echo $v['prenom']; ?></option> <?php } ?>
+                        </select>
                         <hr>
                         <button type="submit" name="modif_infos_base" class="form form-control">Modifier</button>
                     </div>
@@ -40,3 +46,4 @@
         </div>
     </div>
 </div>
+<?php }else{  header("location:accueil"); } ?>

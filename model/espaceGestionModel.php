@@ -6,6 +6,13 @@ function get_tous_membres()
     $requete->execute();
     return $requete->fetchAll();
 }
+function get_tous_membres_admin()
+{
+    global $bdd;
+    $requete = $bdd->prepare("SELECT * FROM salarie WHERE id_s NOT IN (SELECT id_s FROM salarie WHERE id_s='".$_SESSION['id']."')");
+    $requete->execute();
+    return $requete->fetchAll();
+}
 
 function addMembre($nom, $prenom, $email, $randomPswd, $id_a, $id_c){
     global $bdd;

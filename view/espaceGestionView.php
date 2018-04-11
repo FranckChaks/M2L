@@ -13,7 +13,9 @@
                                 <th>Prénom</th>
                                 <th>E-mail</th>
                                 <th>Crédits</th>
+                                <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] == 3){ ?>
                                 <th>Options</th>
+                                <?php } ?>
                             </tr>
                         </thead>
                         <tbody>
@@ -33,8 +35,13 @@
                                         <?= $v["email"]; ?>
                                     </td>
                                     <td><span><?= $v["credit"]; ?></span></td>
-                                    <td><span><a href="index.php?p=modifMembres&id=<?=$v["id_s"]; ?>">Modifier</a> | <a href="index.php?p=suppMembres&id=<?=$v["id_s"]; ?>">Supprimer</a></span></td>
-                                </tr>
+                                    <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] == 3){ ?>
+                                        <td><span>
+                                                <?php if($v['estChef'] < 2){ ?> <a href="index.php?p=nommerChef&id=<?=$v["id_s"]; ?>">Nommer Chef</a> | <?php }
+                                                if ($v['estChef'] == 2){ ?><a href="index.php?p=retraitChef&id=<?=$v["id_s"]; ?>">Retirer grade</a> | <?php } ?>
+                                                <a href="index.php?p=modifMembres&id=<?=$v["id_s"]; ?>">Modifier</a> | <a href="index.php?p=suppMembres&id=<?=$v["id_s"]; ?>">Supprimer</a></span></td>
+                                    <?php } ?>
+                                        </tr>
                                 <?php $number++; } ?>
                         </tbody>
                     </table>

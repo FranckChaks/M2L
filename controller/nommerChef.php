@@ -1,10 +1,9 @@
 <?php
-require "model/suppMembresModel.php";
+require "model/nommerChefModel.php";
 if (isset($_SESSION['lvl']) AND $_SESSION['lvl']==3) {
     if (isset($_GET["id"])) {
         $id = (int)$_GET["id"];
-        deleteAdresseClient($id);
-        deleteMembres($id);
+        nommerPersonneChef($id);
         header("location:espaceGestion");
     } else {
         header('Location: espaceGestion');
