@@ -6,26 +6,40 @@
     <form method="post" action="#">
         <label for="rechercher"></label>
         <input type="text" name="search" placeholder="Rechercher...">
+
+        <label for="date_min" class="label_date">Entre le:
+            <input type="date" name="date_min"></label>
+
+        <label for="date_max" class="label_date">Et le:
+            <input type="date" name="date_max"></label>
         <input type="submit" name="submit">
     </form>
 
 
     <?php
         if(isset($_POST['submit'])){ ?>
-    <nav>
-        <ul>
+
+            <table class="table table-hover table-bordered table-responsive">
+                <tr>
+                    <th class="th_search">Formation</th>
+                    <th class="th_search">Date</th>
+                    <th class="th_search">Prestataire</th>
+                    <th class="th_search">Ville</th>
+                </tr>
     <?php
             foreach($req as $k => $v){ ?>
 
-
-                    <li><?=$v['contenu'];?></li>
-                    <li><?=$v['date_deb'];?></li>
-                    <li><?=$v['nom_p']." ".$v['prenom_p'];?></li>
-                    <li><?=$v['commune'];?></li>
-
+                    <tr>
+                        <td><?=$v['contenu'];?></td>
+                        <td><?=$v['date_deb'];?></td>
+                        <td><?=$v['nom_p']." ".$v['prenom_p'];?></td>
+                        <td><?=$v['commune'];?></td><br>
+                    </tr>
             <?php } ?>
-        </ul>
-    </nav>
+
+
+
+            </table>
     <?php
         }
     ?>
@@ -47,6 +61,7 @@
                     <th class="th_search">Prestataire</th>
                     <th class="th_search">Adresse</th>
                     <th class="th_search">Action</th>
+                    <th class="th_search">Commentaires</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -64,6 +79,9 @@
                                 <button class="btn btn-success">Ajouter</button>
                             </a>
                         </td>
+                        <td><a href="index.php?p=commentController&id=<?= $v['id_f'] ?>">
+                                <button class="btn btn-primary">Voir</button>
+                            </a></td>
                     </tr>
 
 

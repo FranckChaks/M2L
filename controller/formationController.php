@@ -5,7 +5,12 @@
     if(isset($_POST['submit'])){
 
         $search = $_POST['search'];
-        $req = search($search);
+
+        $date_max = $_POST['date_max'];
+        $date_min = $_POST['date_min'];
+        $req = search($search, $date_min, $date_max);
+
+
     }
 
     if(isset($_GET['ajouter'])){
@@ -14,8 +19,8 @@
         $credit = creditLeft()[0];              //credit salarie
         $credit = $credit - $formcredit;
 
-        var_dump($credit);
-        die();
+//        var_dump($credit);
+//        die();
         updateCredit($credit);
 
         if($credit < 0){                //comparaison si le salarié a assez de crédits pour s'inscrire à la formation

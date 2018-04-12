@@ -1,10 +1,15 @@
 <?php
 
-    function search($search){
+    function search($search, $date_min, $date_max){
         global $bdd;
 
-        $req = $bdd->prepare("SELECT f.contenu, DATE_FORMAT(f.date_deb,'%d/%m/%Y') as date_deb, p.nom_p, p.prenom_p, a.rue, a.cp, a.numero, a.commune FROM formation f, adresse a, type_formation t, prestataire p WHERE f.id_a = a.id_a AND f.id_type = t.id_type AND f.id_p = p.id_p AND (f.contenu LIKE '%" . $search . "%')");
+        $req = $bdd->prepare("SELECT DISTINCT f.contenu, DATE_FORMAT(f.date_deb,'%d/%m/%Y') as date_deb, p.nom_p, p.prenom_p, a.rue, a.cp, a.numero, a.commune FROM formation f, adresse a, type_formation t, prestataire p, salarie s WHERE f.id_a = a.id_a AND f.id_type = t.id_type AND f.id_p = p.id_p AND ((f.contenu LIKE '%" . $search . "%') OR (s.nom LIKE '%" . $search . "%') OR (s.prenom LIKE '%" . $search . "%') OR (a.commune LIKE '%" . $search . "%')  OR (p.nom_p LIKE '%" . $search . "%')  OR (p.prenom_p LIKE '%" . $search . "%'))");
         $req->execute();
+        return $req->fetchAll();
+    }
+    function searchDate($date_min, $date_max){
+        global $bdd;
+        $req = $bdd->prepare("SELECT f.contenu, DATE_FORMAT(f.date_deb,'%d/%m/%Y') as date_deb FROM formation f WHERE f.date_deb >=".$date_min." AND f.date_deb <=".$date_max." ORDER BY date_deb");
         return $req->fetchAll();
     }
 
