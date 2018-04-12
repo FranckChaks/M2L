@@ -57,6 +57,6 @@
         global $bdd;
         $requete = $bdd->prepare("SELECT * FROM salarie WHERE id_c=".$_SESSION['id']);
         $requete->execute();
-        return $requete->fetchAll(PDO::FETCH_ASSOC);
+        return $requete->fetchAll();
     }
 ?>

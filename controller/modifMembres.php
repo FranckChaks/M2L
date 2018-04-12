@@ -18,7 +18,11 @@ if (isset($_POST['modif_infos_base'])) {
         $nom = $_POST['nom'];
         $prenom = $_POST['prenom'];
         $email = $_POST['email'];
-        $id_c = $_POST['chef'];
+        if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] < 2 ) {
+            $id_c = $_POST['chef'];
+        }else{
+            $id_c=0;
+        }
         modif_infos_base($id,$nom, $prenom, $email, $id_c);
     }
     header('Location:espaceGestion');

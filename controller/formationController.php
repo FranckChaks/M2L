@@ -14,8 +14,6 @@
         $credit = creditLeft()[0];              //credit salarie
         $credit = $credit - $formcredit;
 
-//        var_dump($credit);
-////        die();
 
         if($credit < 0){                //comparaison si le salarié a assez de crédits pour s'inscrire à la formation
             echo "Vous n'avez plus assez de crédits.";
