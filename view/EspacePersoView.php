@@ -22,7 +22,7 @@
                     <td class="col-xs-3 col-md-3"><?=$v['date_deb']; ?></td>
                     <td class="col-xs-3 col-md-3"><?=$v['credit']; ?></td>
                     <td class="col-xs-3 col-md-3"><b>
-                            <?php if($v['etat'] == 0){ 
+                            <?php if($v['etat'] == 0){
                                 echo "<button class='btn btn-warning'>En attente...</button>";
                             }
                             else if($v['etat'] == 1){

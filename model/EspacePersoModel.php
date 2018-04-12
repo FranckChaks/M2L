@@ -3,7 +3,7 @@
     function displayFormations(){
         global $bdd;
 
-        $req = $bdd->prepare("SELECT f.contenu, f.date_deb, f.credit, p.etat FROM formation f, salarie s, participer p WHERE p.id_s = s.id_s AND p.id_f = f.id_f AND s.id_s =".$_SESSION['id']);
+        $req = $bdd->prepare("SELECT f.contenu, DATE_FORMAT(f.date_deb,'%d/%m/%Y') as date_deb, f.credit, p.etat FROM formation f, salarie s, participer p WHERE p.id_s = s.id_s AND p.id_f = f.id_f AND s.id_s =".$_SESSION['id']);
         $req->execute();
         return $req->fetchAll();
     }

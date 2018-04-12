@@ -1,7 +1,7 @@
 <?php
 require "model/espaceGestionModel.php";
     $req = displayUncheckedFormation();
-    if (isset($_SESSION['lvl']) AND $_SESSION['lvl']==3) {
+    if (isset($_SESSION['lvl']) AND $_SESSION['lvl']== 3) {
         $r = get_tous_membres_admin();
     }else{
         $r = get_tous_membres();

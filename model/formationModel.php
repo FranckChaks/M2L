@@ -12,7 +12,7 @@
 
         global $bdd;
 
-        $req = $bdd->prepare("SELECT f.contenu, f.date_deb, f.nb_j, f.id_f, f.credit, p.nom_p, p.prenom_p, a.rue, a.commune, a.numero FROM formation f, prestataire p, adresse a WHERE f.id_p = p.id_p AND f.id_a = a.id_a");
+        $req = $bdd->prepare("SELECT f.contenu, DATE_FORMAT(f.date_deb,'%d/%m/%Y') as date_deb, f.nb_j, f.id_f, f.credit, p.nom_p, p.prenom_p, a.rue, a.commune, a.numero FROM formation f, prestataire p, adresse a WHERE f.id_p = p.id_p AND f.id_a = a.id_a");
         $req->execute();
         return $req->fetchAll();
     }
