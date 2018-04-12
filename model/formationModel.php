@@ -30,7 +30,8 @@
 
         global $bdd;
 
-        $req = $bdd->prepare("UPDATE salarie SET credit ='.$credit.' WHERE id_s=".$_SESSION['id']);
+        $req = $bdd->prepare("UPDATE salarie SET credit = :credit WHERE id_s=".$_SESSION['id']);
+        $req->bindValue(":credit", $credit, PDO::PARAM_INT);
         $req->execute();
     }
 
