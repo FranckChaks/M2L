@@ -12,7 +12,7 @@ require "model/modifMembresModel.php";
 //        var_dump($listeMembres);
 
     //}
-die();
+//die();
 if (isset($_POST['modif_infos_base'])) {
     if (!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['email'])) {
         $nom = $_POST['nom'];
