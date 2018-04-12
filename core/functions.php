@@ -52,5 +52,11 @@
         $headers .= 'Content-type: text/html; charset=UTF-8'."\r\n";
         mail($email,'Votre Mot de passe M2L', $message, $headers);
     }
-
+    function get_tous_membres()
+    {
+        global $bdd;
+        $requete = $bdd->prepare("SELECT * FROM salarie WHERE id_c=".$_SESSION['id']);
+        $requete->execute();
+        return $requete->fetchAll(PDO::FETCH_ASSOC);
+    }
 ?>

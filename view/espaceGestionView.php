@@ -1,3 +1,15 @@
+<?php
+if (isset($_SESSION['lvl']) AND $_SESSION['lvl']=='3'){
+
+}
+if (isset($_SESSION['lvl']) AND $_SESSION['lvl']=='2'){
+
+}
+
+if (isset($_SESSION['lvl']) AND $_SESSION['lvl']!=='2' AND $_SESSION['lvl']!=='3'){
+    header('location:accueil');
+}
+?>
 <div class="container">
 <div id="page-wrapper">
     <div id="page-inner">
