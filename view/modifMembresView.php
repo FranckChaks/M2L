@@ -1,4 +1,29 @@
-<?php if (isset($_SESSION['lvl']) AND $_SESSION['lvl']==3){ ?>
+<?php
+if (isset($_SESSION['lvl']) AND $_SESSION['lvl']=='3'){
+
+}
+if (isset($_SESSION['lvl']) AND $_SESSION['lvl']=='2'){
+//    if((int)$_SESSION['id']!==($id)) {
+//        foreach ($t as $a => $b) {
+//            var_dump(in_array($id,$b[]));
+//            die();
+//            if (in_array($id, (int)$b['id_s'])){
+//            }else{
+//                header("location:accueil");
+//            }
+//        }
+//    }
+}
+if (isset($_SESSION['lvl']) AND $_SESSION['lvl']=='1'){
+    if($id!==(int)$_SESSION['id']){
+        header("location:accueil");
+    }
+}
+if(isset($_SESSION['lvl']) AND $_SESSION['lvl']!=='1' AND $_SESSION['lvl']!=='2' AND $_SESSION['lvl']!=='3'){
+        header("location:accueil");
+}
+
+    ?>
 <div id="page-wrapper">
     <div id="page-inner">
         <a href="gestionMembres" class="previous">&laquo; Retour</a>
@@ -46,4 +71,3 @@
         </div>
     </div>
 </div>
-<?php }else{  header("location:accueil"); } ?>
