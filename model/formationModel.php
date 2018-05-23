@@ -1,10 +1,18 @@
 <?php
 
     function search($search){
+
         global $bdd;
 
-        $req = $bdd->prepare("SELECT f.contenu, DATE_FORMAT(f.date_deb,'%d/%m/%Y') as date_deb, p.nom_p, p.prenom_p, a.rue, a.cp, a.numero, a.commune FROM formation f, adresse a, type_formation t, prestataire p WHERE f.id_a = a.id_a AND f.id_type = t.id_type AND f.id_p = p.id_p AND (f.contenu LIKE '%" . $search . "%')");
+        $req = $bdd->prepare("SELECT f.contenu, DATE_FORMAT(f.date_deb,'%d/%m/%Y') 
+                                        as date_deb, p.nom_p, p.prenom_p, a.rue, a.cp, a.numero, a.commune 
+                                        FROM formation f, adresse a, type_formation t, prestataire p 
+                                        WHERE f.id_a = a.id_a 
+                                        AND f.id_type = t.id_type 
+                                        AND f.id_p = p.id_p 
+                                        AND (f.contenu LIKE '%" . $search . "%')");
         $req->execute();
+
         return $req->fetchAll();
     }
 
@@ -12,8 +20,18 @@
 
         global $bdd;
 
-        $req = $bdd->prepare("SELECT f.contenu, DATE_FORMAT(f.date_deb,'%d/%m/%Y') as date_deb, f.nb_j, f.id_f, f.credit, p.nom_p, p.prenom_p, a.rue, a.commune, a.numero FROM formation f, prestataire p, adresse a WHERE f.id_p = p.id_p AND f.id_a = a.id_a");
+        $req = $bdd->prepare("SELECT f.contenu, DATE_FORMAT(f.date_deb,'%d/%m/%Y')
+                                        as date_deb, f.nb_j, f.id_f, f.credit, p.nom_p, p.prenom_p, a.rue, a.commune, a.numero
+                                        FROM formation f, prestataire p, adresse a
+                                        WHERE f.id_f
+                                        NOT IN(
+                                        SELECT id_f
+                                        FROM participer
+                                        WHERE id_s = ".$_SESSION['id'].")
+                                        AND f.id_p = p.id_p
+                                        AND f.id_a = a.id_a");
         $req->execute();
+
         return $req->fetchAll();
     }
 
@@ -23,6 +41,7 @@
 
         $req = $bdd->prepare("SELECT credit FROM salarie WHERE id_s =".$_SESSION['id']);
         $req->execute();
+
         return $req->fetch();
     }
 
@@ -36,10 +55,12 @@
     }
 
     function formationCredit($id_f){
+
         global $bdd;
 
         $req = $bdd->prepare("SELECT credit FROM formation WHERE id_f=".$id_f);
         $req->execute();
+
         return $req->fetch();
     }
 
