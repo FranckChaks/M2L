@@ -1,76 +1,64 @@
 <?php
-if (isset($_SESSION['lvl']) AND $_SESSION['lvl']=='3'){
-
-}
-if (isset($_SESSION['lvl']) AND $_SESSION['lvl']=='2'){
-//    if((int)$_SESSION['id']!==($id)) {
-//        foreach ($t as $a => $b) {
-//            var_dump(in_array($id,$b[]));
-//            die();
-//            if (in_array($id, (int)$b['id_s'])){
-//            }else{
-//                header("location:accueil");
-//            }
-//        }
+//if (isset($_SESSION['lvl']) AND $_SESSION['lvl']=='3'){
+//
+//}
+//if (isset($_SESSION['lvl']) AND $_SESSION['lvl']=='2'){
+////    if((int)$_SESSION['id']!==($id)) {
+////        foreach ($t as $a => $b) {
+////            var_dump(in_array($id,$b[]));
+////            die();
+////            if (in_array($id, (int)$b['id_s'])){
+////            }else{
+////                header("location:accueil");
+////            }
+////        }
+////    }
+//}
+//if (isset($_SESSION['lvl']) AND $_SESSION['lvl']=='1'){
+//    if($id!==(int)$_SESSION['id']){
+//        header("location:accueil");
 //    }
-}
-if (isset($_SESSION['lvl']) AND $_SESSION['lvl']=='1'){
-    if($id!==(int)$_SESSION['id']){
-        header("location:accueil");
-    }
-}
-if(isset($_SESSION['lvl']) AND $_SESSION['lvl']!=='1' AND $_SESSION['lvl']!=='2' AND $_SESSION['lvl']!=='3'){
-        header("location:accueil");
-}
+//}
+//if(isset($_SESSION['lvl']) AND $_SESSION['lvl']!=='1' AND $_SESSION['lvl']!=='2' AND $_SESSION['lvl']!=='3'){
+//        header("location:accueil");
+//}
 
     ?>
 <div id="page-wrapper">
     <div id="page-inner">
-        <a href="gestionMembres" class="previous">&laquo; Retour</a>
+        <a href="EspacePerso" class="previous"><button class="btn btn-primary retour">Retour</button></a>
         <div class="row">
             <div class="col-xs-10 col-sm-8 col-md-8 col-xs-offset-2">
-                <form method="post">
-                    <div class="form-group">
+                <div class="form-group add_user">
+                    <div class="modif-title">
+                        <h3>Modifier l'utilisateur</h3>
+                        <hr>
+                    </div>
+                    <form method="post" class="form_modif">
+
                         <label>Nom:</label>
                         <input type="text" class="form form-control" name="nom" value="<?= $r["nom"]; ?>">
                         <label>Prénom:</label>
                         <input type="text" class="form form-control" name="prenom" value="<?= $r["prenom"]; ?>">
                         <label>Email:</label>
                         <input type="text" class="form form-control" name="email" value="<?= $r["email"]; ?>">
-<!--                        --><?php
-//                            if($_SESSION['id'] = $_GET['id']){ ?>
-<!--                                <label>Mot de passe:</label>-->
-<!--                                    <input type="text" class="form form-control" name="mdp" value="--><?//= $r["mdp"]; ?><!--">-->
-<!--                        --><?php //   }
-//                        ?>
-                        <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] > 1 ){
-                                if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] == '3' AND $r['estChef'] < 2 ){
-                            ?>
-                        <label>Affilié à:</label>
-                        <select name="chef" class="form-control">
-                            <?php  foreach($s as $k=>$v){ ?>
-                            <option value="<?php echo $v['id_s']; ?>" <?php if($r["id_c"]==$v['id_s']){ echo "selected"; } ?>><?php echo $v['nom']; echo $v['prenom']; ?></option> <?php } ?>
-                        </select>
-                        <?php } }?>
+                        <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] > 0 ){
+                            if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] == '1' AND $r['estChef'] < 1 ){
+                                ?>
+                                <label>Affilié à:</label>
+                                <select name="chef" class="form-control">
+                                    <?php  foreach($s as $k=>$v){ ?>
+                                        <option value="<?php echo $v['id_s']; ?>" <?php if($r["id_c"]==$v['id_s']){ echo "selected"; } ?>><?php echo $v['nom']." ".$v['prenom']; ?></option> <?php } ?>
+                                </select>
+                            <?php } }?>
                         <hr>
-                        <button type="submit" name="modif_infos_base" class="form form-control">Modifier</button>
-                    </div>
-                </form>
-                <hr class="primary">
-                <hr class="primary">
-                <form method="post">
-                    <div class="form-group">
-                        <label>Crédits:</label>
-                        <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="5000" data-slider-step="50" data-slider-value="<?= $r["credit"]; ?>" data-slider-enabled="false" />
+                        <button type="submit" name="modif_infos_base" class="btn btn-success">Modifier</button>
 
-                        <input id="ex1-enabled" type="checkbox"/> Autoriser Modification |
-                        <span id="ex1CurrentSliderValLabel">Valeur de la modification: <span id="ex1SliderVal">0</span></span><br/>
-                        <label>Jours de formations restants:</label>
-                        <input type="text" class="form form-control" name="prenom" value="<?= $r["nbj"]; ?>">
-                        <hr>
-                        <button type="submit" name="modif_infos_credit" class="form form-control">Modifier</button>
-                    </div>
-                </form>
+                    </form>
+                </div>
+                <hr class="primary">
+                <hr class="primary">
+
             </div>
         </div>
     </div>

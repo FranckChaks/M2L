@@ -1,5 +1,5 @@
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+    <div class="container-fluid thead-dark">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> </button>
@@ -15,16 +15,15 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
-<header class="container">
+<header class="body">
     <section id="connexion" class="no-padding">
         <div class="header-container"></div>
         <div class="header-content">
             <div class="header-content-inner">
-                <hr>
                 <div class="background-log">
-                    <h2>Connexion<br/></h2>
+                    <h2 class="title_login">Connexion<br/></h2>
                     <br>
-                    <form action="#" method="post">
+                    <form action="#" method="post" class="form_log">
                         <div class="input-group width-log">
                        <span class="input-group-addon">
                        <i class="glyphicon glyphicon-user"></i>
@@ -47,7 +46,7 @@
                         }
                         ?>
                         <div class="wrap">
-                            <button class="button" type="submit" name="submit">Valider</button>
+                            <button class="btn btn-success" type="submit" name="submit">Valider</button>
                         </div>
                     </form>
                 </div>

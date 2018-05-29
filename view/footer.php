@@ -1,10 +1,13 @@
-<div class="container-fluid">
-   <div class="row">
-    <div class="col-xs-12 col-md-12 footer">
-        © 2018 - Maison des Ligues de Lorraine
-    </div>
-    </div>
-</div>
+<footer class="container-fluid text-center footer">
+    <p>© 2018 - Maison des Ligues de Lorraine</p>
+</footer>
+<script>
+    $(".nav li").on("click", function() {
+        $(".nav li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+</script>
 <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
 <!-- CORE JQUERY  -->
 <script src="assets/js/jquery-3.2.1.js"></script>
@@ -14,3 +17,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.js"></script>
 <!-- CUSTOM SCRIPTS  -->
 <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -16,6 +16,14 @@
         return $req->fetch();
     }
 
+    function displayJour(){
+        global $bdd;
+
+        $req = $bdd->prepare("SELECT nbj FROM salarie WHERE id_s =".$_SESSION['id']);
+        $req->execute();
+        return $req->fetch();
+    }
+
     function displayInfo(){
         global $bdd;
 

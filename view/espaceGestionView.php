@@ -1,135 +1,115 @@
 <?php
-if (isset($_SESSION['lvl']) AND $_SESSION['lvl']=='3'){
 
-}
-if (isset($_SESSION['lvl']) AND $_SESSION['lvl']=='2'){
-
-}
-
-if (isset($_SESSION['lvl']) AND $_SESSION['lvl']!=='2' AND $_SESSION['lvl']!=='3'){
+if (isset($_SESSION['lvl']) AND $_SESSION['lvl']!=='1' AND $_SESSION['lvl']!=='2'){
     header('location:accueil');
 }
 ?>
-<div class="container">
-<div id="page-wrapper">
-    <div id="page-inner">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+<div class="container text-center">
+    <div class="col-sm-8 text-left">
+        <h1>Gestion des employés</h1>
+        <p>Dans cet espace vous pourrez consulter l'état de vos formations, vos crédits et jours disponibles, ainsi que modifier vos informations personnelles.</p>
+        <hr>
+        <table class="table table-hover table-bordered table-responsive">
+            <thead class="thead-dark">
+            <tr>
+                <th class="th_search">Nom / Prénom</th>
+                <th class="th_search">Email</th>
+                <th class="th_search">Crédits</th>
+                <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] == 1){ ?>
+                    <th class="th_search">Options</th>
+                <?php } ?>
+            </tr>
+            <tbody>
+            <?php
+            foreach($r as $k=>$v){
+            ?>
+            <tr>
+                <td class="col-xs-3 col-md-3"><?= $v["nom"]." ".$v["prenom"]; ?></td>
+                <td class="col-xs-3 col-md-3">
+                    <?= $v["email"]; ?>
+                </td>
+                <td class="col-xs-1 col-md-1" style="width: 16.66%"><span><?= $v["credit"]; ?></span></td>
+                <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] == 1){ ?>
+                <td class="col-xs-6 col-md-6">
+                    <nav>
+                        <ul>
+                            <a href="index.php?p=nommerChef&id=<?=$v["id_s"]; ?>"><li><?php if($v['estChef'] < 1){ ?> Nommer Chef<?php }  ?></li></a>
+                            <a href="index.php?p=modifMembres&id=<?=$v["id_s"]; ?>"><li>Modifier</li></a>
+                            <a href="index.php?p=suppMembres&id=<?=$v["id_s"]; ?>"><li> Supprimer</li></a>
+                        </ul>
+                    </nav>
 
-                <div class="table-responsive">
-                    <table class="table table-striped table-bordered table-hover">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Nom</th>
-                                <th>Prénom</th>
-                                <th>E-mail</th>
-                                <th>Crédits</th>
-                                <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] == 3){ ?>
-                                <th>Options</th>
-                                <?php } ?>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php
-                                $number = 1 ;
-                                foreach($r as $k=>$v){
-                                    ?>
-                                <tr>
-                                    <td>
-                                        <?= $number; ?>
-                                    </td>
-                                    <td><span><?= $v["nom"]; ?></span></td>
-                                    <td>
-                                        <?= $v["prenom"]; ?>
-                                    </td>
-                                    <td>
-                                        <?= $v["email"]; ?>
-                                    </td>
-                                    <td><span><?= $v["credit"]; ?></span></td>
-                                    <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] == 3){ ?>
-                                        <td><span>
-                                                <?php if($v['estChef'] < 2){ ?> <a href="index.php?p=nommerChef&id=<?=$v["id_s"]; ?>">Nommer Chef</a> | <?php }
-                                                if ($v['estChef'] == 2){ ?><a href="index.php?p=retraitChef&id=<?=$v["id_s"]; ?>">Retirer grade</a> | <?php } ?>
-                                                <a href="index.php?p=modifMembres&id=<?=$v["id_s"]; ?>">Modifier</a> | <a href="index.php?p=suppMembres&id=<?=$v["id_s"]; ?>">Supprimer</a></span></td>
-                                    <?php } ?>
-                                        </tr>
-                                <?php $number++; } ?>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] > 1){ ?>
-        <h2 class="center">Gérer demandes</h2>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+                    <?php  if ($v['estChef'] == 1){ ?><a href="index.php?p=retraitChef&id=<?=$v["id_s"]; ?>">Retirer grade</a> | <?php } ?>
 
-                <div class="table-responsive">
-                    <table class="table table-striped table-bordered table-hover">
-                        <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Nom</th>
-                            <th>Prénom</th>
-                            <th>Nom formation</th>
-                            <th>Options</th>
-                        </tr>
-                        </thead>
+                    <?php } ?>
+            </tr>
+            <?php } ?>
+
+            </tbody>
+        </table>
+    </div>
+    <br><br><br>
+
+
+    <div class="row">
+        <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] > 0){ ?>
+        <div class="col-sm-4 well">
+            <h4>Demande de formations en attente</h4>
+            <div class="col-sm-12 text-left">
+                <div class="row">
+                    <table class="table-condensed table2">
                         <tbody>
                         <?php
-                        $number = 1 ;
                         foreach($req as $k=>$v){
                             ?>
-                            <tr>
-                                <td>
-                                    <?= $number; ?>
-                                </td>
-                                <td><span><?= $v["nom"]; ?></span></td>
-                                <td>
-                                    <?= $v["prenom"]; ?>
-                                </td>
-                                <td>
-                                    <?= $v["contenu"]; ?>
-                                </td>
-                                <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] == 3){ ?>
-                                    <td>
-                                        <span>
-                                            <a href="index.php?p=validerFormation&id_s=<?=$v["id_s"]; ?>&id_f=<?=$v["id_f"]; ?>">Valider Formation</a> |
-                                            <a href="index.php?p=refusFormation&id_s=<?=$v["id_s"]; ?>&id_f=<?=$v["id_f"]; ?>">Refus Formation</a>
-                                        </span>
+                            <tr class="test">
+                                <td class="col-xs-3 col-md-3 tdstyle"><?= $v["nom"]." ".$v["prenom"]; ?></td>
+                                <td class="col-xs-3 col-md-3 tdstyle"><?= $v["contenu"]; ?></td>
+                                <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] == 1){ ?>
+                                    <td  class="col-xs-4 col-md-4 tdstyle">
+                                        <a href="index.php?p=validerFormation&id_s=<?=$v["id_s"]; ?>&id_f=<?=$v["id_f"]; ?>">Valider</a> |
+                                        <a href="index.php?p=refusFormation&id_s=<?=$v["id_s"]; ?>&id_f=<?=$v["id_f"]; ?>">Refuser</a>
                                     </td>
-                                <?php } ?>
+                                <?php }  ?>
+
                             </tr>
-                            <?php $number++; } ?>
+                        <?php } ?>
                         </tbody>
                     </table>
                 </div>
             </div>
-        </div>
+        </div><br>
         <?php } ?>
-        <h1 class="center">Ajouter un salarié</h1>
-        <div class="row">
-            <form action="#" method="post">
-                <h2>Adresse du salarié</h2>
-                <div class="form-group">
-                    <label for="rue">Rue</label>
-                    <input type="text" class="form-control" placeholder="rue" name="rue">
-                </div>
-                <div class="form-group">
-                    <label for="numero">Numero</label>
-                    <input type="text" class="form-control" placeholder="numero" name="numero">
-                </div>
-                <div class="form-group">
-                    <label for="commune">Commune</label>
-                    <input type="text" class="form-control" placeholder="commune" name="commune">
-                </div>
-                <div class="form-group">
-                    <label for="cp">CP</label>
-                    <input type="text" class="form-control" placeholder="cp" name="cp">
-                </div>
-                <br>
-                <h2>Informations du salarié</h2>
+        <div class="col-sm-4">
+            <!--            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">-->
+            <!--            <p>Project 2</p>-->
+        </div><br><br>
+        <div class="col-sm-8 text-left add_user">
+            <div class="col-sm-6">
+                <p><h3>Ajouter un salarié</h3></p>
+                <hr>
+                <p><h4>Adresse:</h4></p>
+                <form action="#" method="post">
+                    <div class="form-group ">
+                        <label for="rue">Rue</label>
+                        <input type="text" class="form-control" placeholder="rue" name="rue">
+                    </div>
+                    <div class="form-group">
+                        <label for="numero">Numero</label>
+                        <input type="text" class="form-control" placeholder="numero" name="numero">
+                    </div>
+                    <div class="form-group">
+                        <label for="commune">Commune</label>
+                        <input type="text" class="form-control" placeholder="commune" name="commune">
+                    </div>
+                    <div class="form-group">
+                        <label for="cp">CP</label>
+                        <input type="text" class="form-control" placeholder="cp" name="cp">
+                    </div>
+                    <br>
+            </div><br><br><br><br>
+            <div class="col-sm-6">
+                <p><h4>Informations du salarié:</h4></p>
 
                 <div class="form-group">
                     <label for="prenom">Prénom</label>
@@ -143,10 +123,10 @@ if (isset($_SESSION['lvl']) AND $_SESSION['lvl']!=='2' AND $_SESSION['lvl']!=='3
                     <label for="email">Email</label>
                     <input type="email" class="form-control" placeholder="Email" name="email">
                 </div>
-
-                <input type="submit" class="btn btn-default" name="submit">
-            </form>
+                <br>
+                <input type="submit" class="btn btn-success" name="submit"><br><br>
+                </form>
+            </div>
         </div>
     </div>
-</div>
-</div>
+</div><br>

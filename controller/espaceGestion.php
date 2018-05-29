@@ -1,7 +1,7 @@
 <?php
 require "model/espaceGestionModel.php";
     $req = displayUncheckedFormation();
-    if (isset($_SESSION['lvl']) AND $_SESSION['lvl']== 3) {
+    if (isset($_SESSION['lvl']) AND $_SESSION['lvl']== 1) {
         $r = get_tous_membres_admin();
     }else{
         $r = get_tous_membres();
@@ -21,7 +21,7 @@ require "model/espaceGestionModel.php";
         //génération aléatoire du mot de passe
         $randomPswd = getRandomPSWD();
         //message du mail comportant le mot de passe non crypté de l'employé
-        $message = "Félicitation, votre compte M2L a été crée. Voici votre mot de passe personnel: ".$randomPswd;
+        $message = "Félicitation, votre compte M2L a été créé. Voici votre mot de passe personnel: ".$randomPswd;
         envoiPswd($email,$message);
         //cryptage du mot de passe généré
         $randomPswd = sha1($randomPswd);

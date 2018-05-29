@@ -3,6 +3,7 @@ require "model/EspacePersoModel.php";
 
     $req = displayFormations();
     $credit = displayCredit();
+    $nbj = displayJour();
     $info = displayInfo();
     foreach($req as $k=>$v){
         if($v['etat'] == 0){

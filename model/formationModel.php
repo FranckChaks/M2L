@@ -5,7 +5,7 @@
         global $bdd;
 
         $req = $bdd->prepare("SELECT f.contenu, DATE_FORMAT(f.date_deb,'%d/%m/%Y') 
-                                        as date_deb, p.nom_p, p.prenom_p, a.rue, a.cp, a.numero, a.commune 
+                                        as date_deb, p.nom_p, p.prenom_p, a.rue, a.cp, a.numero, a.commune, f.id_f 
                                         FROM formation f, adresse a, type_formation t, prestataire p 
                                         WHERE f.id_a = a.id_a 
                                         AND f.id_type = t.id_type 
