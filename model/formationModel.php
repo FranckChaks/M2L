@@ -56,12 +56,13 @@
         return $req->fetch();
     }
 
-    function addFormation($id_s, $id_f){
+    function addFormation($id_s, $id_f, $etat){
         global $bdd;
 
-        $req = $bdd->prepare("INSERT INTO participer VALUES (:id_s, :id_f, 0)");
+        $req = $bdd->prepare("INSERT INTO participer VALUES (:id_s, :id_f, :etat)");
         $req->bindValue(":id_s", $id_s, PDO::PARAM_INT);
         $req->bindValue(":id_f", $id_f, PDO::PARAM_INT);
+        $req->bindValue(":etat", $etat, PDO::PARAM_INT);
         $req->execute();
     }
 

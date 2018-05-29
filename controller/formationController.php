@@ -8,6 +8,12 @@
         $req = search($search);
     }
 
+    if($_SESSION['lvl'] > 1){ // verification de si la personne qui réserve est un chef , si oui sa réservation, si valide, est autorisé de manière automatique, sinon il attend comme tout le monde
+        $etat = 1;
+    }else{
+        $etat = 0;
+    }
+
     if(isset($_GET['ajouter']))
     {
         $id_f = $_GET['ajouter'];
@@ -26,7 +32,7 @@
             //là on ajoute la formation au salarié
             //update déplacé à la validation par le chef
             //updateCredit($credit);
-            addFormation($_SESSION['id'], $id_f);
+            addFormation($_SESSION['id'], $id_f, $etat);
             header("location:EspacePerso");
         }
     }
