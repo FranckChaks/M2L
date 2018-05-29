@@ -55,3 +55,13 @@
         $req->execute();
     }
 
+    function updateCreditChef($credit, $NBJour){
+
+        global $bdd;
+
+        $req = $bdd->prepare("UPDATE salarie SET credit = :credit, nbj = :nbjour WHERE id_s=".$_SESSION['id']);
+        $req->bindValue(":credit", $credit, PDO::PARAM_INT);
+        $req->bindValue(":nbjour", $NBJour, PDO::PARAM_INT);
+        $req->execute();
+    }
+
