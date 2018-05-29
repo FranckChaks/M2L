@@ -90,4 +90,6 @@
         $req->bindValue(":id_s", $id_s, PDO::PARAM_INT);
         $req->execute();
     }
+
+
 ?>
