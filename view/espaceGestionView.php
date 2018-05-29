@@ -15,7 +15,7 @@ if (isset($_SESSION['lvl']) AND $_SESSION['lvl']!=='1' AND $_SESSION['lvl']!=='2
                 <th class="th_search">Nom / Prénom</th>
                 <th class="th_search">Email</th>
                 <th class="th_search">Crédits</th>
-                <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] == 1){ ?>
+                <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] > 1){ ?>
                     <th class="th_search">Options</th>
                 <?php } ?>
             </tr>
@@ -29,17 +29,22 @@ if (isset($_SESSION['lvl']) AND $_SESSION['lvl']!=='1' AND $_SESSION['lvl']!=='2
                     <?= $v["email"]; ?>
                 </td>
                 <td class="col-xs-1 col-md-1" style="width: 16.66%"><span><?= $v["credit"]; ?></span></td>
-                <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] == 1){ ?>
+                <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] == 2){ ?>
                 <td class="col-xs-6 col-md-6">
                     <nav>
                         <ul>
-                            <a href="index.php?p=nommerChef&id=<?=$v["id_s"]; ?>"><li><?php if($v['estChef'] < 1){ ?> Nommer Chef<?php }  ?></li></a>
+                            <?php if($v['estChef'] == 0){ ?> 
+                                <a href="index.php?p=nommerChef&id=<?=$v["id_s"]; ?>"><li>Nommer Chef</li></a>
+                            <?php } ?>
+                            <?php if ($v['estChef'] == 1){ ?>
+                                <a href="index.php?p=retraitChef&id=<?=$v["id_s"]; ?>"><li>Retirer grade</li></a>
+                            <?php } ?>
                             <a href="index.php?p=modifMembres&id=<?=$v["id_s"]; ?>"><li>Modifier</li></a>
                             <a href="index.php?p=suppMembres&id=<?=$v["id_s"]; ?>"><li> Supprimer</li></a>
                         </ul>
                     </nav>
 
-                    <?php  if ($v['estChef'] == 1){ ?><a href="index.php?p=retraitChef&id=<?=$v["id_s"]; ?>">Retirer grade</a> | <?php } ?>
+                    
 
                     <?php } ?>
             </tr>
@@ -65,7 +70,7 @@ if (isset($_SESSION['lvl']) AND $_SESSION['lvl']!=='1' AND $_SESSION['lvl']!=='2
                             <tr class="test">
                                 <td class="col-xs-3 col-md-3 tdstyle"><?= $v["nom"]." ".$v["prenom"]; ?></td>
                                 <td class="col-xs-3 col-md-3 tdstyle"><?= $v["contenu"]; ?></td>
-                                <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] == 1){ ?>
+                                <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] > 0){ ?>
                                     <td  class="col-xs-4 col-md-4 tdstyle">
                                         <a href="index.php?p=validerFormation&id_s=<?=$v["id_s"]; ?>&id_f=<?=$v["id_f"]; ?>">Valider</a> |
                                         <a href="index.php?p=refusFormation&id_s=<?=$v["id_s"]; ?>&id_f=<?=$v["id_f"]; ?>">Refuser</a>

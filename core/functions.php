@@ -90,6 +90,14 @@
         $req->bindValue(":id_s", $id_s, PDO::PARAM_INT);
         $req->execute();
     }
+    
+    function displayInfo(){
+        global $bdd;
 
+        $req = $bdd->prepare("SELECT * FROM salarie s, adresse a WHERE s.id_a = a.id_a AND id_s =".$_SESSION['id']);
+        $req->execute();
+
+        return $req->fetchAll();
+    }
 
 ?>

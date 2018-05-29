@@ -2,7 +2,7 @@
 require "model/validerFormationModel.php";
 
 
-if (isset($_SESSION['lvl']) AND $_SESSION['lvl'] > 1) {
+if (isset($_SESSION['lvl']) AND $_SESSION['lvl'] > 0) {
     $id_s = $_GET['id_s'];
     $id_f = $_GET['id_f'];
 

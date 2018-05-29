@@ -19,7 +19,7 @@
         $NBJour = creditLeft()[1]; //nbJour salarie
         $NBJour = $NBJour - $formNBJour;
 
-        if($_SESSION['lvl'] > 1){ // verification de si la personne qui réserve est un chef , si oui sa réservation, si valide, est autorisé de manière automatique, sinon il attend comme tout le monde
+        if($_SESSION['lvl'] > 0){ // verification de si la personne qui réserve est un chef , si oui sa réservation, si valide, est autorisé de manière automatique, sinon il attend comme tout le monde
             $etat = 1;
             if($credit < 0 OR $NBJour < 0 )
             {   //comparaison si le salarié a assez de crédits pour s'inscrire à la formation
