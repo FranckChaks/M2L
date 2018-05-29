@@ -95,8 +95,8 @@ if (isset($_SESSION['lvl']) AND $_SESSION['lvl']!=='2' AND $_SESSION['lvl']!=='3
                                 <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] == 3){ ?>
                                     <td>
                                         <span>
-                                            <a href="index.php?p=validerFormation&id_s=<?=$v["id_f"]; ?>&id_f=<?=$v["id_s"]; ?>">Valider Formation</a> |
-                                            <a href="index.php?p=refusFormation&id_s=<?=$v["id_f"]; ?>&id_f=<?=$v["id_s"]; ?>">Refus Formation</a>
+                                            <a href="index.php?p=validerFormation&id_s=<?=$v["id_s"]; ?>&id_f=<?=$v["id_f"]; ?>">Valider Formation</a> |
+                                            <a href="index.php?p=refusFormation&id_s=<?=$v["id_s"]; ?>&id_f=<?=$v["id_f"]; ?>">Refus Formation</a>
                                         </span>
                                     </td>
                                 <?php } ?>

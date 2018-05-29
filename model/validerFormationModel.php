@@ -1,14 +1,11 @@
 <?php
-function valid_reservation_formation($id)
+function valid_reservation_formation($id_s,$id_f)
 {
     global $bdd;
-    $req = $bdd->prepare("UPDATE salarie SET nom = :nom, prenom = :prenom, email = :email, id_c = :id_c WHERE id_s = :id");
-    $req->bindValue(":id", $id, PDO::PARAM_INT);
-    $req->bindValue(":nom", $nom, PDO::PARAM_STR);
-    $req->bindValue(":prenom", $prenom, PDO::PARAM_STR);
-    $req->bindValue(":email", $email, PDO::PARAM_STR);
-    $req->bindValue(":id_c", $id_c, PDO::PARAM_INT);
+    $req = $bdd->prepare("UPDATE participer SET etat = 1 WHERE id_s=:id_s AND id_f=:id_f");
+    $req->bindValue(":id_s", $id_s, PDO::PARAM_INT);
+    $req->bindValue(":id_f", $id_f, PDO::PARAM_INT);
     $req->execute();
-    $message = "Modifications effectuées";
+    $message = "Réservation effectuée";
     return $message;
 }

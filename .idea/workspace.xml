@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="620680c3-6a0a-4187-b304-149106890080" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/formationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/formationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/validerFormation.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/validerFormation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/formationModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/formationModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/validerFormationModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/validerFormationModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/espaceGestionView.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/espaceGestionView.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,29 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="espaceGestionView.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/espaceGestionView.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="98" column="96" selection-start-line="98" selection-start-column="96" selection-end-line="98" selection-end-column="96" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="refusFormation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/refusFormation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="formationController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="formationController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/formationController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+            <state relative-caret-position="17">
+              <caret line="10" column="123" selection-start-line="10" selection-start-column="123" selection-end-line="10" selection-end-column="123" />
             </state>
           </provider>
         </entry>
@@ -54,8 +39,8 @@
       <file leaf-file-name="formationModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/formationModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
+            <state relative-caret-position="221">
+              <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -63,8 +48,8 @@
       <file leaf-file-name="validerFormationModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/validerFormationModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="132">
+              <caret line="6" column="52" lean-forward="true" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -72,8 +57,26 @@
       <file leaf-file-name="validerFormation.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/validerFormation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            <state relative-caret-position="289">
+              <caret line="17" column="45" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="86" column="70" selection-start-line="86" selection-start-column="70" selection-end-line="86" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="espaceGestionView.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/espaceGestionView.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="469">
+              <caret line="98" column="119" selection-start-line="98" selection-start-column="119" selection-end-line="98" selection-end-column="119" />
             </state>
           </provider>
         </entry>
@@ -81,7 +84,7 @@
       <file leaf-file-name="espaceGestionModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/espaceGestionModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="279">
               <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
               <folding>
                 <marker date="1525545166707" expanded="true" signature="366:480" ph="INSERT INTO salarie... " />
@@ -222,17 +225,19 @@
         <option value="$PROJECT_DIR$/controller/retraitChef.php" />
         <option value="$PROJECT_DIR$/model/modifMembresModel.php" />
         <option value="$PROJECT_DIR$/model/espaceGestionModel.php" />
-        <option value="$PROJECT_DIR$/view/espaceGestionView.php" />
         <option value="$PROJECT_DIR$/view/modifMembresView.php" />
         <option value="$PROJECT_DIR$/controller/modifMembres.php" />
         <option value="$PROJECT_DIR$/controller/EspacePerso.php" />
         <option value="$PROJECT_DIR$/controller/espaceGestion.php" />
         <option value="$PROJECT_DIR$/controller/login.php" />
         <option value="$PROJECT_DIR$/model/bdd.php" />
-        <option value="$PROJECT_DIR$/core/functions.php" />
         <option value="$PROJECT_DIR$/view/formationView.php" />
-        <option value="$PROJECT_DIR$/model/formationModel.php" />
+        <option value="$PROJECT_DIR$/view/espaceGestionView.php" />
+        <option value="$PROJECT_DIR$/model/validerFormationModel.php" />
         <option value="$PROJECT_DIR$/controller/formationController.php" />
+        <option value="$PROJECT_DIR$/model/formationModel.php" />
+        <option value="$PROJECT_DIR$/controller/validerFormation.php" />
+        <option value="$PROJECT_DIR$/core/functions.php" />
       </list>
     </option>
   </component>
@@ -620,19 +625,26 @@
       <option name="project" value="LOCAL" />
       <updated>1527587909745</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="controle sur le statu du réservant , si chef réservation validé d'office si critères remplis, sinon liste d'attente comme tout le monde">
+      <created>1527588533856</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1527588533856</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87361000" />
+    <option name="totallyTimeSpent" value="89785000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.49947917" visible="true" weight="0.3284055" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005208" side_tool="true" visible="true" weight="0.3284055" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49947917" visible="true" weight="0.3284055" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005208" side_tool="true" weight="0.3284055" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49791667" weight="0.30728617" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -712,7 +724,8 @@
     <MESSAGE value="fix display page modif membre à finir pour les chefs" />
     <MESSAGE value="&quot;&quot;" />
     <MESSAGE value="Controle nbjour lors de la réservation et déplacement de la fonction update credit dans le fichier function.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Controle nbjour lors de la réservation et déplacement de la fonction update credit dans le fichier function.php" />
+    <MESSAGE value="controle sur le statu du réservant , si chef réservation validé d'office si critères remplis, sinon liste d'attente comme tout le monde" />
+    <option name="LAST_COMMIT_MESSAGE" value="controle sur le statu du réservant , si chef réservation validé d'office si critères remplis, sinon liste d'attente comme tout le monde" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -946,13 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/espaceGestionView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="98" column="96" selection-start-line="98" selection-start-column="96" selection-end-line="98" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/EspacePersoView.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -974,49 +980,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/loginModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/espaceGestionModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-          <folding>
-            <marker date="1525545166707" expanded="true" signature="366:480" ph="INSERT INTO salarie... " />
-            <marker date="1525545166707" expanded="true" signature="937:1021" ph="INSERT INTO adresse... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/espaceGestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/validerFormation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/validerFormationModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1027,6 +994,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controller/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/refusFormationModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controller/refusFormation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1034,17 +1015,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/refusFormationModel.php">
+    <entry file="file://$PROJECT_DIR$/controller/espaceGestion.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="112" selection-start-line="4" selection-start-column="112" selection-end-line="4" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        <state relative-caret-position="306">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1057,15 +1031,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/formationModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
+        <state relative-caret-position="221">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/formationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        <state relative-caret-position="17">
+          <caret line="10" column="123" selection-start-line="10" selection-start-column="123" selection-end-line="10" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/espaceGestionModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+          <folding>
+            <marker date="1525545166707" expanded="true" signature="366:480" ph="INSERT INTO salarie... " />
+            <marker date="1525545166707" expanded="true" signature="937:1021" ph="INSERT INTO adresse... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/espaceGestionView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="98" column="119" selection-start-line="98" selection-start-column="119" selection-end-line="98" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/validerFormationModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="52" lean-forward="true" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/validerFormation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="86" column="70" selection-start-line="86" selection-start-column="70" selection-end-line="86" selection-end-column="70" />
         </state>
       </provider>
     </entry>

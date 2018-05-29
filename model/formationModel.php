@@ -45,17 +45,6 @@
         return $req->fetch();
     }
 
-
-    function formationCredit($id_f){
-
-        global $bdd;
-
-        $req = $bdd->prepare("SELECT credit,nb_j FROM formation WHERE id_f=".$id_f);
-        $req->execute();
-
-        return $req->fetch();
-    }
-
     function addFormation($id_s, $id_f, $etat){
         global $bdd;
 
