@@ -60,13 +60,54 @@ if (isset($_SESSION['lvl']) AND $_SESSION['lvl']!=='2' AND $_SESSION['lvl']!=='3
                 </div>
             </div>
         </div>
-        <?php
-            foreach($req as $k=>$v){
+        <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] > 1){ ?>
+        <h2 class="center">Gérer demandes</h2>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
 
-                echo $v['nom']."<br>";
-                echo $v['prenom']."<br>";
-            }
-        ?>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Nom formation</th>
+                            <th>Options</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php
+                        $number = 1 ;
+                        foreach($req as $k=>$v){
+                            ?>
+                            <tr>
+                                <td>
+                                    <?= $number; ?>
+                                </td>
+                                <td><span><?= $v["nom"]; ?></span></td>
+                                <td>
+                                    <?= $v["prenom"]; ?>
+                                </td>
+                                <td>
+                                    <?= $v["contenu"]; ?>
+                                </td>
+                                <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] == 3){ ?>
+                                    <td>
+                                        <span>
+                                            <a href="index.php?p=validerFormation&id_s=<?=$v["id_s"]; ?>&id_f=<?=$v["id_f"]; ?>">Valider Formation</a> |
+                                            <a href="index.php?p=refusFormation&id_s=<?=$v["id_s"]; ?>&id_f=<?=$v["id_f"]; ?>">Refus Formation</a>
+                                        </span>
+                                    </td>
+                                <?php } ?>
+                            </tr>
+                            <?php $number++; } ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <?php } ?>
         <h1 class="center">Ajouter un salarié</h1>
         <div class="row">
             <form action="#" method="post">

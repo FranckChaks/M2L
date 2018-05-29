@@ -43,7 +43,7 @@
     <?php
         }
     ?>
-    <h3>Vos crédits restants: <?=$credit['credit'];?></h3>
+    <h3>Vos crédits restants: <?=$credit['credit'];?> | Nombre de jours restants: <?=$credit['nbj'];?></h3>
 
 
 
@@ -68,7 +68,7 @@
         <?php
             foreach($form as $k=>$v){ ?>
                     <tr>
-                        <td><?=$v['contenu'];?></td>
+                        <td><a href="index.php?p=detailFormation&id_f=<?=$v['id_f'];?>&titre=<?=$v['contenu']; ?>"><?=$v['contenu'];?></a></td>
                         <td><?=$v['date_deb'];?></td>
                         <td><?=$v['nb_j'];?></td>
                         <td><?=$v['credit'];?></td>
