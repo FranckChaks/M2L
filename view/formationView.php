@@ -29,7 +29,7 @@
     <?php
         }
     ?>
-    <h3>Vos crédits restants: <?=$credit['credit'];?></h3>
+    <h3>Vos crédits restants: <?=$credit['credit'];?> | Nombre de jours restants: <?=$credit['nbj'];?></h3>
 
 
 

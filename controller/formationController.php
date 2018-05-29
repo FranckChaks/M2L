@@ -15,14 +15,17 @@
         $credit = creditLeft()[0];              //credit salarie
         $credit = $credit - $formcredit;
 
-        if($credit < 0)
+        $formNBJour = formationCredit($id_f)[1]; //nbJour formation
+        $NBJour = creditLeft()[1]; //nbJour salarie
+        $NBJour = $NBJour - $formNBJour;
+        if($credit < 0 OR $NBJour < 0 )
         {   //comparaison si le salarié a assez de crédits pour s'inscrire à la formation
-            echo "Vous n'avez plus assez de crédits.";
+            echo "Vous n'avez plus assez de crédits ou votre nombre de jour est insuffisant";
         }
         else {
             //là on ajoute la formation au salarié
-            updateCredit($credit);
-
+            //update déplacé à la validation par le chef
+            //updateCredit($credit);
             addFormation($_SESSION['id'], $id_f);
             header("location:EspacePerso");
         }
@@ -30,5 +33,4 @@
 
     $form = displayFormation();
     $credit = creditLeft();
-
     require "view/formationView.php";

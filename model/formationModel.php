@@ -39,26 +39,18 @@
 
         global $bdd;
 
-        $req = $bdd->prepare("SELECT credit FROM salarie WHERE id_s =".$_SESSION['id']);
+        $req = $bdd->prepare("SELECT credit,nbj FROM salarie WHERE id_s =".$_SESSION['id']);
         $req->execute();
 
         return $req->fetch();
     }
 
-    function updateCredit($credit){
-
-        global $bdd;
-
-        $req = $bdd->prepare("UPDATE salarie SET credit = :credit WHERE id_s=".$_SESSION['id']);
-        $req->bindValue(":credit", $credit, PDO::PARAM_INT);
-        $req->execute();
-    }
 
     function formationCredit($id_f){
 
         global $bdd;
 
-        $req = $bdd->prepare("SELECT credit FROM formation WHERE id_f=".$id_f);
+        $req = $bdd->prepare("SELECT credit,nb_j FROM formation WHERE id_f=".$id_f);
         $req->execute();
 
         return $req->fetch();
@@ -72,3 +64,4 @@
         $req->bindValue(":id_f", $id_f, PDO::PARAM_INT);
         $req->execute();
     }
+
