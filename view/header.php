@@ -1,7 +1,7 @@
 <?php
     if (isset($_SESSION['connecte']))
     {
-        echo "Nombre de personnes onnectée : ".countConnect();
+        echo "Nombre de personnes connectée : ".countConnect();
         ?>
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
