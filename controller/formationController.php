@@ -10,7 +10,11 @@
 
     if(isset($_GET['ajouter']))
     {
+        $id_s = $_SESSION['id'];
         $id_f = $_GET['ajouter'];
+        $formation = getInfoFormation($id_f);//get info formation pour l'historique
+        $date_f = $formation['date_deb'];
+
         $formcredit = formationCredit($id_f)[0]; //credit formation
         $credit = creditLeft()[0];              //credit salarie
         $credit = $credit - $formcredit;
@@ -30,6 +34,7 @@
                 //update déplacé à la validation par le chef
                 updateCreditChef($credit, $NBJour);
                 addFormation($_SESSION['id'], $id_f, $etat);
+                historiqueFormation($id_f,$id_s,$date_f,$formNBJour,$formcredit);
                 header("location:EspacePerso");
             }
         }else{

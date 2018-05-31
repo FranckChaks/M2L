@@ -100,4 +100,28 @@
         return $req->fetchAll();
     }
 
+    function getIDPrestataire($id_f){
+        global $bdd;
+
+        $req = $bdd->prepare("SELECT id_p FROM prestataire WHERE id_p IN (SELECT id_p FROM formation WHERE id_f=".$id_f.")");
+        $req->execute();
+        return $req->fetch();
+    }
+
+    function getInfoFormation($id_f){
+       global $bdd;
+        $req = $bdd->prepare("SELECT * FROM formation WHERE id_f =".$id_f);
+        $req->execute();
+        return $req->fetch();
+    }
+    function historiqueFormation($id_f,$id_s,$date_f,$nbjour,$credit){
+       global $bdd;
+        $req = $bdd->prepare("INSERT INTO historique (id_f, id_s, date_f, coutJour, coutCredit) VALUES (:id_f, :id_s, :date_f, :coutJour, :coutCredit)");
+        $req->bindValue(":id_f", $id_f, PDO::PARAM_INT);
+        $req->bindValue(":id_s", $id_s, PDO::PARAM_INT);
+        $req->bindValue(":date_f", $date_f, PDO::PARAM_STR);
+        $req->bindValue(":coutJour", $nbjour, PDO::PARAM_INT);
+        $req->bindValue(":coutCredit", $credit, PDO::PARAM_INT);
+        $req->execute();
+    }
 ?>

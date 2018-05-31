@@ -56,6 +56,7 @@
                 </tbody>
             </table>
             <a href="index.php?p=formationController"><button class="btn btn-primary">Réserver des formations</button></a>
+            <a href="index.php?p=pdfHistorique&id=<?= $_SESSION['id']; ?>"><button class="btn btn-warning">Imprimer vos formations</button></a>
             <br><br>
         </div>
         <div class="col-sm-2 sidenav">

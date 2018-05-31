@@ -1,6 +1,4 @@
-Fonctionnalité à implémenter:
-    *Page Login principale
-    *Espace Chef où le chef peut valider ou refuser une formation qu'un employé demande + affichage liste de ses employés
+﻿Fonctionnalité à implémenter:
     *Ajout Formation
 	*Abonnement quand la formation est validée
 	*Validation Formation
