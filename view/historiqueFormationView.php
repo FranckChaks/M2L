@@ -1,10 +1,6 @@
-<style type="text/css">
-    .th_search{border: solid 1px black} ;
-
-</style>
 <div class="container-fluid text-center">
     <div class="row content">
-        <div>
+        <div class="col-sm-3">
             <img src="assets/img/logo.png">
 
             <p style="text-align: right; margin-top:-150px;" >
@@ -17,18 +13,16 @@
 
             </p>
         </div>
-        <div>
-            <p style="font-size:20px;">Voici le récapitulatif de vos formations : </p><br>
-        </div>
             <div>
+                <p><h4>Vos formations:</h4></p>
                 <table class="table table-hover table-bordered table-responsive">
                     <thead class="thead-dark">
-                    <tr>'
-                        <th class="th_search">Nom de la formation</th>
-                        <th class="th_search">Prestataire</th>
-                        <th class="th_search">Date de début</th>
-                        <th class="th_search">Coûts en Crédit</th>
-                        <th class="th_search">Coût en nombre de jour</th>
+                    <tr>
+                        <th  style="border: 1px solid black; padding-right: 15px; background:#2a2828; color:white;" class="th_search">Nom de la formation</th>
+                        <th  style="border: 1px solid black; padding-right: 15px; background:#2a2828; color:white;" class="th_search">Prestataire</th>
+                        <th  style="border: 1px solid black; padding-right: 15px; background:#2a2828; color:white;" class="th_search">Date de début</th>
+                        <th  style="border: 1px solid black; padding-right: 15px; background:#2a2828; color:white;" class="th_search">Coûts en Crédit</th>
+                        <th  style="border: 1px solid black; padding-right: 15px; background:#2a2828; color:white;" class="th_search">Coût en nombre de jour</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -37,11 +31,11 @@
                     {
                         ?>
                         <tr>
-                            <td class="col-xs-2 col-md-2"><?=$v['contenu']; ?></td>
-                            <td class="col-xs-2 col-md-2"><?=$v['nom_p']; ?></td>
-                            <td class="col-xs-2 col-md-2"><?php $t = new DateTime($v['date_f']); $date_formation = date_format($t,'d-m-Y'); echo $date_formation; ?></td>
-                            <td class="col-xs-2 col-md-2"><?=$v['coutCredit']; ?></td>
-                            <td class="col-xs-2 col-md-2"><?=$v['coutJour']; ?></td>
+                            <td class="col-xs-2 col-md-2"  style="border: 1px solid black; padding-right: 15px;"><?=$v['contenu']; ?></td>
+                            <td class="col-xs-2 col-md-2"  style="border: 1px solid black; padding-right: 15px;"><?=$v['nom_p']." ".$v['prenom_p']; ?></td>
+                            <td class="col-xs-2 col-md-2"  style="border: 1px solid black; padding-right: 15px; text-align: right;"><?php $t = new DateTime($v['date_f']); $date_formation = date_format($t,'d-m-Y'); echo $date_formation; ?></td>
+                            <td class="col-xs-2 col-md-2" style="border: 1px solid black; padding-right: 15px; text-align: right;"><?=$v['coutCredit']; ?></td>
+                            <td class="col-xs-2 col-md-2" style="border: 1px solid black; padding-right: 15px; text-align: right;"><?=$v['coutJour']; ?></td>
                         </tr>
 
                         <?php
