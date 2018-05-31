@@ -108,14 +108,20 @@
         return $req->fetch();
     }
 
-    function getInfoFormation($id_f){
-       global $bdd;
-        $req = $bdd->prepare("SELECT * FROM formation WHERE id_f =".$id_f);
+    function getInfoFormation($id_f)
+    {
+        global $bdd;
+
+        $req = $bdd->prepare("SELECT * FROM formation WHERE id_f =" . $id_f);
         $req->execute();
         return $req->fetch();
     }
-    function historiqueFormation($id_f,$id_s,$date_f,$nbjour,$credit){
-       global $bdd;
+
+
+    function historiqueFormation($id_f,$id_s,$date_f,$nbjour,$credit)
+    {
+        global $bdd;
+
         $req = $bdd->prepare("INSERT INTO historique (id_f, id_s, date_f, coutJour, coutCredit) VALUES (:id_f, :id_s, :date_f, :coutJour, :coutCredit)");
         $req->bindValue(":id_f", $id_f, PDO::PARAM_INT);
         $req->bindValue(":id_s", $id_s, PDO::PARAM_INT);
@@ -124,4 +130,42 @@
         $req->bindValue(":coutCredit", $credit, PDO::PARAM_INT);
         $req->execute();
     }
-?>
+
+    function countConnect ()
+    {
+        global $bdd;
+        $temps = time();
+        $over = time() - (60 * 5);
+
+        $req = $bdd->prepare("SELECT COUNT(*) AS nbre_entrees FROM connectes WHERE ip = :ip");
+        $req->bindValue(":ip", $_SERVER['REMOTE_ADDR'], PDO::PARAM_STR );
+        $req->execute();
+
+        $rep = $req->fetch();
+
+        if($rep['nbre_entrees'] == 0)
+        {
+            $req1 = $bdd->prepare("INSERT INTO connect VALUES (:ip, :temps)");
+            $req1->bindValue(':ip', $_SERVER['REMOTE_ADDR'], PDO::PARAM_STR);
+            $req1->bindValue(':temps', $temps, PDO::PARAM_STR);
+            $req1->execute();
+        }
+        else
+        {
+            $req2 = $bdd->prepare("UPDATE connect SET temps = :temps WHERE ip = :ip");
+            $req2->bindValue(":temps", $temps, PDO::PARAM_STR);
+            $req2->bindValue(":ip", $_SERVER['REMOTE_ADDR'], PDO::PARAM_STR);
+            $req2->execute();
+        }
+
+        $req3 = $bdd->prepare("DELETE FROM connect WHERE temps < :over");
+        $req3->bindValue(":over", $over, PDO::PARAM_STR);
+        $req3->execute();
+
+        $req4 = $bdd->prepare("SELECT COUNT(*) as nbConnect FROM connect");
+        $req4->execute();
+
+        $count = $req4->fetch();
+
+        return $count['nbConnect'];
+    }
