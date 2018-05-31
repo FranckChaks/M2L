@@ -42,6 +42,10 @@
                         <input type="text" class="form form-control" name="prenom" value="<?= $r["prenom"]; ?>">
                         <label>Email:</label>
                         <input type="text" class="form form-control" name="email" value="<?= $r["email"]; ?>">
+                        <label>Mot de passe : </label>
+                        <input type="password" class="form form-control" name="mdp">
+                        <label>Vérification du mot de passe : </label>
+                        <input type="password" class="form form-control" name="mdp2">
                         <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] > 1 AND $r['estChef'] < 1 ){
                             
                                 ?>

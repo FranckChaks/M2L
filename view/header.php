@@ -17,7 +17,9 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="accueil">Accueil</a></li>
                     <li class=""><a href="EspacePerso">Espace personnel</a></li>
+                    <?php if (isset($_SESSION['lvl']) AND $_SESSION['lvl']>0){ ?>
                     <li class=""><a href="espaceGestion">Gestion employés</a></li>
+                    <?php } ?>
                     <li class=""><a href="formationController">Formations</a></li>
                     <li class=""><a href="Documentation">Documentation</a></li>
                 </ul>
