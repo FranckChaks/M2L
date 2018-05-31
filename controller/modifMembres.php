@@ -18,26 +18,42 @@ require "model/modifMembresModel.php";
 //die();
 if (isset($_POST['modif_infos_base'])) {
     if (!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['email'])) {
-        $nom = $_POST['nom'];
-        $prenom = $_POST['prenom'];
-        $email = $_POST['email'];
+        $nom = ($_POST['nom']);
+        $prenom = ($_POST['prenom']);
+        $email = ($_POST['email']);
+
+
         
         if($_SESSION['id'] == $id || $_SESSION['lvl'] < 2){ // Si id session est l'id de la modification ( modif perso )
             $id_c = $infoPerso; // Alors id_c prends sa valeure originale 
         }else{
             header('Location:EspacePerso');
         }
-        
+
         if($_SESSION['lvl'] == 2 AND $_SESSION['id'] == $id ) { //si admin et si modification non sur sa fiche perso alors id_c prends la valeure du select
             $id_c='0'; 
         }
-        if($_SESSION['lvl'] == 2 AND $_SESSION['id'] !== $id){
+        if($_SESSION['lvl'] == 2 AND $_SESSION['id'] != $id){
             (int)$id_c = $_POST['chef'];
         }
-        
-        modif_infos_base($id,$nom, $prenom, $email, $id_c);
+
+        if(!empty($_POST['mdp'])){
+            $mdp = sha1($_POST['mdp']);
+            if(!empty($_POST['mdp2'])){
+                $mdp2 = sha1($_POST['mdp']);
+                if($mdp = $mdp2){
+                    modif_infos_base($id,$nom, $prenom, $email, $id_c,$mdp);
+                }else{
+                    header('Location:accueil');
+                }
+            }else{
+                header('Location:accueil');
+            }
+
+        }
+        modif_infos_base2($id,$nom, $prenom, $email, $id_c);
     }
-    header('Location:espaceGestion');
+    header('Location:EspacePerso');
         
 }
 if (isset($_POST['modif_infos_credit'])) {
