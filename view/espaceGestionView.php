@@ -1,9 +1,3 @@
-<?php
-
-if (isset($_SESSION['lvl']) AND $_SESSION['lvl']!=='1' AND $_SESSION['lvl']!=='2'){
-    header('location:accueil');
-}
-?>
 <div class="container text-center">
     <div class="col-sm-8 text-left">
         <h1>Gestion des employés</h1>
@@ -20,10 +14,10 @@ if (isset($_SESSION['lvl']) AND $_SESSION['lvl']!=='1' AND $_SESSION['lvl']!=='2
                 <?php } ?>
             </tr>
             <tbody>
-            <?php
-            foreach($r as $k=>$v){
-            ?>
-            <tr>
+                <?php
+                    foreach($r as $k=>$v){
+                ?>
+                <tr>
                 <td class="col-xs-3 col-md-3"><?= $v["nom"]." ".$v["prenom"]; ?></td>
                 <td class="col-xs-3 col-md-3">
                     <?= $v["email"]; ?>
@@ -89,6 +83,13 @@ if (isset($_SESSION['lvl']) AND $_SESSION['lvl']!=='1' AND $_SESSION['lvl']!=='2
             <!--            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">-->
             <!--            <p>Project 2</p>-->
         </div><br><br>
+        </div><br><br>
+        <?php
+            if(isset($error))
+            {
+                echo $error;
+            }
+        ?>
         <div class="col-sm-8 text-left add_user">
             <div class="col-sm-6">
                 <p><h3>Ajouter un salarié</h3></p>
