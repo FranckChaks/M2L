@@ -1,6 +1,10 @@
+<style type="text/css">
+    .th_search{border: solid 1px black} ;
+
+</style>
 <div class="container-fluid text-center">
     <div class="row content">
-        <div class="col-sm-3">
+        <div>
             <img src="assets/img/logo.png">
 
             <p style="text-align: right; margin-top:-150px;" >
@@ -13,10 +17,13 @@
 
             </p>
         </div>
+        <div>
+            <p style="font-size:20px;">Voici le récapitulatif de vos formations : </p><br>
+        </div>
             <div>
                 <table class="table table-hover table-bordered table-responsive">
                     <thead class="thead-dark">
-                    <tr>
+                    <tr>'
                         <th class="th_search">Nom de la formation</th>
                         <th class="th_search">Prestataire</th>
                         <th class="th_search">Date de début</th>
