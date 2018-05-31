@@ -1,7 +1,7 @@
 <?php
-    if (isset($_SESSION['connecte']))
-    {
-        echo "Nombre de personnes connectée : ".countConnect();
+//    if (isset($_SESSION['connecte']))
+//    {
+//        echo "Nombre de personnes connectée : ".countConnect();
         ?>
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
@@ -19,7 +19,7 @@
                     <li class=""><a href="EspacePerso">Espace personnel</a></li>
                     <li class=""><a href="espaceGestion">Gestion employés</a></li>
                     <li class=""><a href="formationController">Formations</a></li>
-                    <li class=""><a href="#">Documentation</a></li>
+                    <li class=""><a href="Documentation">Documentation</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="logout"><span class="glyphicon glyphicon-log-in"></span> Déconnexion</a></li>
@@ -27,4 +27,4 @@
             </div>
         </div>
     </nav>
-<?php } ?>
+<?php // } ?>

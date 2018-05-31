@@ -43,7 +43,7 @@ else
             <p class="text_bloc1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, sed, minus! Quos quas, perspiciatis, magni natus pariatur officiis officia. Nobis nihil quis, facilis cupiditate minima cumque inventore possimus ducimus ullam! Doloribus, sed, minus! Quos quas, perspiciatis, magni natus pariatur officiis officia. Nobis nihil quis, facilis cupiditate minima cumque inventore possimus ducimus ullam!</p>
         </div>
         <div class="col-md-6 sous_bloc2">
-            <button class="btn btn-primary button_bloc2"><h1>Documentation</h1></button>
+            <a href="<?=BASE_URL;?>/Documentation"><button class="btn btn-primary button_bloc2"><h1>Documentation</h1></button></a>
         </div>
     </div>
 </div>
