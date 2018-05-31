@@ -65,3 +65,55 @@
         $req->execute();
     }
 
+    function addPrestataireAdress($rue, $numero, $commune, $cp){
+    global $bdd;
+
+        $req = $bdd->prepare("INSERT INTO adresse (rue, numero, commune, cp) 
+                                  VALUES (:rue, :numero, :commune, :cp)");
+        $req->bindValue(":rue", $rue, PDO::PARAM_STR);
+        $req->bindValue(":numero", $numero, PDO::PARAM_INT);
+        $req->bindValue(":commune", $commune, PDO::PARAM_STR);
+        $req->bindValue(":cp", $cp, PDO::PARAM_STR);
+        $req->execute();
+    }
+    function addPrestataire($nom_p,$prenom_p,$id_a){
+        global $bdd;
+
+        $req = $bdd->prepare("INSERT INTO prestataire (nom_p,prenom_p,id_a) 
+                                      VALUES (:nom_p, :prenom_p, :id_a)");
+        $req->bindValue(":nom_p", $nom_p, PDO::PARAM_STR);
+        $req->bindValue(":prenom_p", $prenom_p, PDO::PARAM_STR);
+        $req->bindValue(":id_a", $id_a, PDO::PARAM_STR);
+        $req->execute();
+    }
+    function ajouterFormation($contenu,$prerequis,$date_deb,$nb_j,$credit,$id_p,$id_type,$id_a){
+        global $bdd;
+
+        $req = $bdd->prepare("INSERT INTO formation (contenu, prerequis, date_deb, nb_j, credit, id_p, id_type, id_a) VALUES (:contenu, :prerequis, :date_deb, :nb_j, :credit, :id_p, :id_type, :id_a)");
+        $req->bindValue(":contenu", $contenu, PDO::PARAM_STR);
+        $req->bindValue(":prerequis", $prerequis, PDO::PARAM_STR);
+        $req->bindValue(":date_deb", $date_deb, PDO::PARAM_STR);
+        $req->bindValue(":nb_j", $nb_j, PDO::PARAM_INT);
+        $req->bindValue(":credit", $credit, PDO::PARAM_INT);
+        $req->bindValue(":id_p", $id_p, PDO::PARAM_INT);
+        $req->bindValue(":id_type", $id_type, PDO::PARAM_INT);
+        $req->bindValue(":id_a", $id_a, PDO::PARAM_INT);
+        $req->execute();
+    }
+    function showPrestataire(){
+
+        global $bdd;
+
+        $req = $bdd->prepare("SELECT * FROM prestataire");
+        $req->execute();
+
+        return $req->fetchAll();
+    }
+    function addTypeFormation($libelle){
+
+        global $bdd;
+
+        $req = $bdd->prepare("INSERT INTO type_formation(libelle) VALUES (:libelle)");
+        $req->bindValue(":libelle", $libelle, PDO::PARAM_STR);
+        $req->execute();
+    }

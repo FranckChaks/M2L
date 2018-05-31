@@ -2,6 +2,8 @@
 
     require "model/formationModel.php";
 
+    $requete = showPrestataire();
+
     if(isset($_POST['submit']))
     {
         $search = $_POST['search'];
@@ -53,6 +55,46 @@
 
 
     }
+
+    if(isset($_POST['submitPresta']))
+    {
+        $nom_p = htmlentities($_POST['nom']);
+        $prenom_p = htmlentities($_POST['prenom']);
+        $rue = htmlentities($_POST['rue']);
+        $numero = htmlentities($_POST['numero']);
+        $commune = htmlentities($_POST['commune']);
+        $cp = htmlentities($_POST['cp']);
+
+        addPrestataireAdress($rue,$numero,$commune,$cp);
+        $id_a = $bdd->lastInsertId();
+        addPrestataire($nom_p,$prenom_p,$id_a);
+        header("location:espaceGestion");
+    }
+
+    if(isset($_POST['submitFormation']))
+    {
+        $contenu = htmlentities($_POST['contenu']);
+        $prerequis = htmlentities($_POST['prerequis']);
+        $date_deb = htmlentities($_POST['date_deb']);
+        $nb_j = htmlentities($_POST['nb_j']);
+        $credit = htmlentities($_POST['credit']);
+        $id_p = htmlentities($_POST['id_p']);
+        $libelle = htmlentities($_POST['libelle']);
+
+        $rue = htmlentities($_POST['rue']);
+        $numero = htmlentities($_POST['numero']);
+        $commune = htmlentities($_POST['commune']);
+        $cp = htmlentities($_POST['cp']);
+
+        addPrestataireAdress($rue,$numero,$commune,$cp); // ajout d'une adresse à la bdd , même code que celui pour le prestataire
+        $id_a = $bdd->lastInsertId(); // id de l'adresse de formation qui vient d'être inséré
+        addTypeFormation($libelle);//ajout du libelle dans la table type formation
+        $id_type = $bdd->lastInsertId(); // get l'id du type de formation
+
+        ajouterFormation($contenu,$prerequis,$date_deb,$nb_j,$credit,$id_p,$id_type,$id_a);
+        header("location:espaceGestion");
+    }
+
 
     $form = displayFormation();
     $credit = creditLeft();

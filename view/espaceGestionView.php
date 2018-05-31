@@ -130,7 +130,7 @@
                     <input type="email" class="form-control" placeholder="Email" name="email">
                 </div>
                 <br>
-                <input type="submit" class="btn btn-success" name="submit"><br><br>
+                <input type="submit" class="btn btn-success" name="submit" value="Ajouter"><br><br>
                 </form>
             </div>
         </div>

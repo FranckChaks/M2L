@@ -94,12 +94,108 @@
                 </tbody>
             </table>
             <br>
+            <div class="col-sm-3 add_user">
+                <p><h3>Ajouter un prestataire</h3></p>
+                    <hr>
+                    <form method="post">
+                        <div class="form-group ">
+                            <label for="nom">Nom</label>
+                            <input type="text" class="form-control" placeholder="nom" name="nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="prenom">Prenom</label>
+                            <input type="text" class="form-control" placeholder="prenom" name="prenom">
+                        </div>
+                        <div class="form-group ">
+                            <label for="rue">Rue</label>
+                            <input type="text" class="form-control" placeholder="rue" name="rue">
+                        </div>
+                        <div class="form-group">
+                            <label for="numero">Numero</label>
+                            <input type="text" class="form-control" placeholder="numero" name="numero">
+                        </div>
+                        <div class="form-group">
+                            <label for="commune">Commune</label>
+                            <input type="text" class="form-control" placeholder="commune" name="commune">
+                        </div>
+                        <div class="form-group">
+                            <label for="cp">CP</label>
+                            <input type="text" class="form-control" placeholder="cp" name="cp">
+                        </div>
+                        <input type="submit" class="btn btn-success" name="submitPresta" value="Ajouter"><br><br>
+                    </form>
+
+            </div>
+            <form action="#" method="post">
+            <div class="col-sm-8 text-left add_user">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <p><h3>Ajouter une formation</h3></p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group ">
+                        <label for="rue">Rue</label>
+                        <input type="text" class="form-control" placeholder="rue" name="rue">
+                    </div>
+                    <div class="form-group">
+                        <label for="numero">Numero</label>
+                        <input type="text" class="form-control" placeholder="numero" name="numero">
+                    </div>
+                    <div class="form-group">
+                        <label for="commune">Commune</label>
+                        <input type="text" class="form-control" placeholder="commune" name="commune">
+                    </div>
+                    <div class="form-group">
+                        <label for="cp">CP</label>
+                        <input type="text" class="form-control" placeholder="cp" name="cp">
+                    </div>
+                    <div class="form-group ">
+                        <label for="contenu">Intitulé</label>
+                        <input type="text" class="form-control" placeholder="intitulé" name="contenu">
+                    </div>
+                    <div class="form-group">
+                        <label for="numero">Pré-requis</label>
+                        <input type="text" class="form-control" placeholder="Pré-requis" name="prerequis">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+
+                    <div class="form-group">
+                        <label for="date_deb">Date de début</label>
+                        <input type="date" class="form-control" placeholder="jj/mm/aaaa" name="date_deb">
+                    </div>
+                    <div class="form-group">
+                        <label for="nb_j">Nombre de jours de formation</label>
+                        <input type="number" class="form-control" placeholder="NB jours de formation" name="nb_j">
+                    </div>
+                    <div class="form-group">
+                        <label for="credit">credit</label>
+                        <input type="number" class="form-control" placeholder="credits" name="credit">
+                    </div>
+                    <div class="form-group">
+                        <label for="prestataire">Prestataire</label>
+                        <select class="custom-select" name="id_p">
+                            <?php foreach($requete as $k=>$v){ ?>
+                                <option value="<?= $v['id_p'] ?>"><?php echo $v['nom_p']." ".$v['prenom_p'] ?> </option>
+                            <?php } ?>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Type de formation</label>
+                        <input type="text" class="form-control" placeholder="libellé" name="libelle">
+                    </div>
+                    <br>
+                    <input type="submit" class="btn btn-success" name="submitFormation" value="Ajouter"><br><br>
+                </div>
+            </div>
+            </form>
             <div class="space">
 
             </div>
-
-
         </div>
     </div>
 </div>
+
 
