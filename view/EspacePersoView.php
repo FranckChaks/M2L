@@ -10,6 +10,8 @@
                     <p><?= $v['nom']." ".$v['prenom']; ?></p>
                     <p><?= $v['email']; ?></p>
                     <p><?= $v['numero'] . " " . $v['rue'] . ", " . $v['commune']; ?></p>
+                    <p>Date de création de votre compte :<?php $date_creation = date_create($v['date_creation']) ;  echo date_format($date_creation,'d/m/Y'); ?></p>
+                    <p>Date de votre dernière connexion:<?php $date_creation = date_create($v["last_co"]) ;  echo date_format($date_creation,'d/m/Y'); ?></p>
                     <a href="index.php?p=modifMembres&id=<?=$_SESSION['id']; ?>"><button class="btn btn-default">Modifier</button></a>
                     <?php
                 }

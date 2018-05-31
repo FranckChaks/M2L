@@ -94,6 +94,7 @@
                 </tbody>
             </table>
             <br>
+            <?php if (isset($_SESSION['lvl']) AND $_SESSION['lvl'] == 2){ ?>
             <div class="col-sm-3 add_user">
                 <p><h3>Ajouter un prestataire</h3></p>
                     <hr>
@@ -191,6 +192,8 @@
                 </div>
             </div>
             </form>
+
+            <?php } ?>
             <div class="space">
 
             </div>

@@ -68,7 +68,7 @@
         addPrestataireAdress($rue,$numero,$commune,$cp);
         $id_a = $bdd->lastInsertId();
         addPrestataire($nom_p,$prenom_p,$id_a);
-        header("location:espaceGestion");
+        header("location:formationController");
     }
 
     if(isset($_POST['submitFormation']))
@@ -92,7 +92,7 @@
         $id_type = $bdd->lastInsertId(); // get l'id du type de formation
 
         ajouterFormation($contenu,$prerequis,$date_deb,$nb_j,$credit,$id_p,$id_type,$id_a);
-        header("location:espaceGestion");
+        header("location:formationController");
     }
 
 

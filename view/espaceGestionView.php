@@ -9,6 +9,8 @@
                 <th class="th_search">Nom / Prénom</th>
                 <th class="th_search">Email</th>
                 <th class="th_search">Crédits</th>
+                <th class="th_search">Date d'inscription</th>
+                <th class="th_search">Dernière connexion le</th>
                 <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] > 1){ ?>
                     <th class="th_search">Options</th>
                 <?php } ?>
@@ -23,6 +25,12 @@
                     <?= $v["email"]; ?>
                 </td>
                 <td class="col-xs-1 col-md-1" style="width: 16.66%"><span><?= $v["credit"]; ?></span></td>
+                    <td>
+                        <?php $date_creation = date_create($v['date_creation']) ;  echo date_format($date_creation,'d/m/Y'); ?>
+                    </td>
+                    <td>
+                        <?php $date_creation = date_create($v["last_co"]) ;  echo date_format($date_creation,'d/m/Y'); ?>
+                    </td>
                 <?php if(isset($_SESSION['lvl']) AND $_SESSION['lvl'] == 2){ ?>
                 <td class="col-xs-6 col-md-6">
                     <nav>

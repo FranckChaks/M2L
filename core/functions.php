@@ -169,3 +169,12 @@
 
         return $count['nbConnect'];
     }
+
+    function updateLastCo($last_co){
+        global $bdd;
+        $req = $bdd->prepare("UPDATE salarie SET last_co = :last_co WHERE id_s =".$_SESSION['id']);
+        $req->bindValue(":last_co", $last_co, PDO::PARAM_INT);
+        $req->execute();
+        $message = "Modifications effectuées";
+        return $message;
+    }

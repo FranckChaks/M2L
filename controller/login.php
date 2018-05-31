@@ -20,6 +20,8 @@ if(isset($_POST['submit']))
         $_SESSION['id'] = $reponse['id_s'];
         $_SESSION['email'] = $reponse['email'];
         $_SESSION['lvl'] = $reponse['estChef'];
+        $last_co = date("y.m.d");
+        updateLastCo($last_co);
         if(isset($_POST['remember']))
         {
 ////                $key = $reponse['id_u']."-----".sha1($reponse['email'].$reponse['mdp'].$_SERVER['REMOTE_ADDR']);
