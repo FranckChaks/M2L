@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    $.each($('#myNavbar').find('li'), function() {
+        $(this).toggleClass('active', 
+            window.location.pathname.indexOf($(this).find('a').attr('href')) > -1);
+    }); 
+    
     $("#ex1").slider();
     var mem = $("#ex1").val();
 
