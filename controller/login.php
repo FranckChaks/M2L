@@ -24,7 +24,7 @@ if(isset($_POST['submit']))
         updateLastCo($last_co);
         if(isset($_POST['remember']))
         {
-////                $key = $reponse['id_u']."-----".sha1($reponse['email'].$reponse['mdp'].$_SERVER['REMOTE_ADDR']);
+//                $key = $reponse['id_u']."-----".sha1($reponse['email'].$reponse['mdp'].$_SERVER['REMOTE_ADDR']);
             setcookie('auth',$reponse['id_s']."-----".sha1($reponse['email'].$reponse['mdp'].$_SERVER['REMOTE_ADDR']),time()+(3600*24*3),'/','localhost',false,true);
             //le dernier argument evite que le cookie soit editable en javascript
 
@@ -52,7 +52,7 @@ if(isset($_COOKIE['auth']))
     {
         $_SESSION['connecte'] = true;
         $_SESSION['id'] = $auth[0];
-        $_SESSION['lvl'] = $reponse['lvl'];
+        $_SESSION['lvl'] = $reponse['estChef'];
 
         setcookie('auth', $reponse['id_s']."-----".sha1($reponse['email'].$reponse['mdp'].$_SERVER['REMOTE_ADDR']),time()+(3600*24*3),'/','localhost',false,true);
         header("location:".BASE_URL."/accueil");
