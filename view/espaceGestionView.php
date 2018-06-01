@@ -1,7 +1,7 @@
 <div class="container text-center">
     <div class="col-sm-8 text-left">
         <h1>Gestion des employés</h1>
-        <p>Dans cet espace vous pourrez consulter l'état de vos formations, vos crédits et jours disponibles, ainsi que modifier vos informations personnelles.</p>
+        <p>Dans cet espace vous pourrez consulter vos salariés, accepter ou non les demandes de formations en attente et ajouter de nouveaux salariés à votre équipe.</p>
         <hr>
         <table class="table table-hover table-bordered table-responsive">
             <thead class="thead-dark">
