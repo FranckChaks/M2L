@@ -40,7 +40,7 @@ else
     <div class="row bloc6">
         <div class="col-md-6 sous_bloc1">
             <p class="titre_text_bloc1">Retrouvez nos formations</p>
-            <p class="text_bloc1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, sed, minus! Quos quas, perspiciatis, magni natus pariatur officiis officia. Nobis nihil quis, facilis cupiditate minima cumque inventore possimus ducimus ullam! Doloribus, sed, minus! Quos quas, perspiciatis, magni natus pariatur officiis officia. Nobis nihil quis, facilis cupiditate minima cumque inventore possimus ducimus ullam!</p>
+            <p class="text_bloc1">Grâce à la Maison des Ligues de Lorraine, vous pourrez vous inscire à de toutes nouvelles formations sportives proposées par différentes personnes, à différents endroits mais spécialement pour vous ! Si vous rencontrez un problème, nous avons la solution ! Jetez un oeil à notre documentation si vous cherchez des aides d'utilisation du site, et sinon, nous vous souhaitons de bonnes formations sportives !</p>
         </div>
         <div class="col-md-6 sous_bloc2">
             <a href="<?=BASE_URL;?>/Documentation"><button class="btn btn-primary button_bloc2"><h1>Documentation</h1></button></a>
